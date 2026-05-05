@@ -1,34 +1,36 @@
-Free Tarot Card API with Images
-Welcome to the ultimate Tarot Card API, available for free!
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-🌟 Features:
+## Getting Started
 
-Random Card Selector: Our API can randomly select a Tarot card, offering a unique experience every time.
-Full Card Listing: Access a comprehensive list of all Tarot cards in our collection.
-High-Quality Images: Each Tarot card comes with a beautifully designed, high-resolution image.
-Ease of Use: Designed with simplicity in mind, our API is user-friendly and easy to integrate.
-Free to Fork and Use: Open to all, you can fork this repository and use our API in your projects without any cost.
+First, run the development server:
 
-🔮 Ideal for:
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-Tarot reading websites and apps
-Spiritual and astrological content creators
-Personal projects exploring divination and Tarot
-Educational purposes in learning APIs or Tarot card meanings
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-💡 Getting Started:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-Clone or Fork the Repository: Get started by cloning or forking this repository.
-Explore the Documentation: Our clear and concise documentation makes integration a breeze.
-Implement in Your Project: Use our API to add Tarot card functionalities to your application or website.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-🤝 Contribute:
+## Learn More
 
-Suggestions, improvements, and pull requests are welcome. Let's make this the best Tarot Card API out there!
-Embrace the mystical and enhance your projects with our Free Tarot Card API!
+To learn more about Next.js, take a look at the following resources:
 
-Feel free to modify this description to better fit your project's unique features and functionality.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-Endpoints
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-Use endpoints /cards/onecard of picking a single random card & use /cards for all cards
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

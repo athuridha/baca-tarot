@@ -1,21 +1,35 @@
 {
-  "name": "tarotapi",
-  "version": "1.0.1",
-  "description": "A comprehensive Tarot card API built with Node.js, providing developers with easy access to a vast collection of Tarot card meanings, interpretations, and symbolism. This API allows users to retrieve Tarot card details, including card images, descriptions, upright and reversed meanings, and associated keywords. Harness the power of Tarot to enhance your applications, websites, or personal projects with this intuitive and versatile API.",
-  "main": "app.js",
+  "name": "next-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
   },
-  "keywords": [
-    "tarotcard",
-    "tarot"
-  ],
-  "author": "Kushagra Srivastava",
-  "license": "MIT",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "@google/genai": "^1.52.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "@scalar/api-reference-react": "^0.9.33",
+    "@scalar/nextjs-api-reference": "^0.10.14",
+    "@tailwindcss/typography": "^0.5.19",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.38.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-markdown": "^10.1.0",
+    "tailwind-merge": "^3.5.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }

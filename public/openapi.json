@@ -1,0 +1,163 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Baca Tarot API",
+    "description": "API mistis untuk pengundian kartu Tarot, interpretasi, dan pembacaan personal.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Baca Tarot Team"
+    }
+  },
+  "servers": [
+    {
+      "url": "/api",
+      "description": "Main API Server"
+    }
+  ],
+  "paths": {
+    "/read": {
+      "get": {
+        "summary": "Ambil kartu acak (Simple Draw)",
+        "description": "Mengambil satu atau beberapa kartu tarot secara acak beserta artinya.",
+        "parameters": [
+          {
+            "name": "spread",
+            "in": "query",
+            "description": "Jumlah kartu yang ditarik (1, 3, atau 6)",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "enum": [1, 3, 6],
+              "default": 1
+            }
+          },
+          {
+            "name": "lang",
+            "in": "query",
+            "description": "Bahasa interpretasi (id atau en)",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": ["id", "en"],
+              "default": "id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Berhasil mengambil kartu",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReadingResponse"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Pembacaan Personal (Detailed Reading)",
+        "description": "Melakukan pembacaan tarot dengan konteks user seperti nama, tanggal lahir, dan situasi saat ini.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReadingRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Berhasil melakukan pembacaan",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DetailedReadingResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ReadingRequest": {
+        "type": "object",
+        "required": ["spread", "lang"],
+        "properties": {
+          "spread": {
+            "type": "integer",
+            "enum": [1, 3, 6]
+          },
+          "lang": {
+            "type": "string",
+            "enum": ["id", "en"]
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Nama lengkap user"
+          },
+          "birthDate": {
+            "type": "string",
+            "format": "date",
+            "description": "Tanggal lahir (YYYY-MM-DD)"
+          },
+          "story": {
+            "type": "string",
+            "description": "Situasi atau pertanyaan user"
+          }
+        }
+      },
+      "ReadingResponse": {
+        "type": "object",
+        "properties": {
+          "spread": { "type": "integer" },
+          "language": { "type": "string" },
+          "cards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CardInfo"
+            }
+          }
+        }
+      },
+      "DetailedReadingResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string" },
+          "data": {
+            "type": "object",
+            "properties": {
+              "user": {
+                "type": "object",
+                "properties": {
+                  "fullName": { "type": "string" },
+                  "birthDate": { "type": "string" },
+                  "story": { "type": "string" }
+                }
+              },
+              "reading": {
+                "$ref": "#/components/schemas/ReadingResponse"
+              }
+            }
+          }
+        }
+      },
+      "CardInfo": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "position": { "type": "string" },
+          "isReversed": { "type": "boolean" },
+          "meaning": { "type": "string" },
+          "image": { "type": "string" }
+        }
+      }
+    }
+  }
+}
