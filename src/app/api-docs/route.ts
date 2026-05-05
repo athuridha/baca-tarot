@@ -6,6 +6,6 @@ const config = {
   },
   theme: "purple",
   darkMode: true,
-};
+} as const;
 
 export const GET = ApiReference(config);
