@@ -1,64 +1,108 @@
 import { NextRequest, NextResponse } from "next/server";
 import { GoogleGenAI } from "@google/genai";
 
+function getLifePathNumber(dateStr: string): number | null {
+  if (!dateStr) return null;
+  const digits = dateStr.replace(/\D/g, '');
+  if (digits.length < 8) return null;
+  let sum = digits.split('').reduce((a, b) => a + parseInt(b), 0);
+  while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
+    sum = sum.toString().split('').reduce((a, b) => a + parseInt(b), 0);
+  }
+  return sum;
+}
+
+function getNameNumerology(name: string): number | null {
+  if (!name) return null;
+  const map: Record<string, number> = {
+    A:1, J:1, S:1, B:2, K:2, T:2, C:3, L:3, U:3,
+    D:4, M:4, V:4, E:5, N:5, W:5, F:6, O:6, X:6,
+    G:7, P:7, Y:7, H:8, Q:8, Z:8, I:9, R:9
+  };
+  const cleanName = name.toUpperCase().replace(/[^A-Z]/g, '');
+  if (!cleanName) return null;
+  let sum = cleanName.split('').reduce((acc, char) => acc + (map[char] || 0), 0);
+  while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
+    sum = sum.toString().split('').reduce((a, b) => a + parseInt(b), 0);
+  }
+  return sum;
+}
+
 export async function POST(req: NextRequest) {
   try {
     const { story, fullName, birthDate, cards, spreadSize, language } = await req.json();
 
     const isEn = language === "en";
+    
+    const lifePathNumber = getLifePathNumber(birthDate);
+    const destinyNumber = getNameNumerology(fullName);
 
     const userInfoEn = [
-      fullName ? `Name: ${fullName}` : null,
-      birthDate ? `Date of Birth: ${birthDate}` : null,
+      fullName ? `Name: ${fullName}${destinyNumber ? ` (Destiny Number: ${destinyNumber})` : ''}` : null,
+      birthDate ? `Date of Birth: ${birthDate}${lifePathNumber ? ` (Life Path Number: ${lifePathNumber})` : ''}` : null,
       story ? `Story: "${story}"` : null
     ].filter(Boolean).join("\n");
 
     const userInfoId = [
-      fullName ? `Nama: ${fullName}` : null,
-      birthDate ? `Tanggal Lahir: ${birthDate}` : null,
+      fullName ? `Nama: ${fullName}${destinyNumber ? ` (Angka Takdir/Destiny Number: ${destinyNumber})` : ''}` : null,
+      birthDate ? `Tanggal Lahir: ${birthDate}${lifePathNumber ? ` (Angka Jalan Hidup/Life Path: ${lifePathNumber})` : ''}` : null,
       story ? `Cerita: "${story}"` : null
     ].filter(Boolean).join("\n");
 
     const cardsDesc = cards.map((c: any) => `- ${isEn ? "Position" : "Posisi"}: ${c.positionName}\n- ${isEn ? "Card" : "Kartu"}: ${c.card.name} ${c.isReversed ? (isEn ? "(Reversed)" : "(Terbalik/Reversed)") : (isEn ? "(Upright)" : "(Tegak/Upright)")}\n- ${isEn ? "Meaning" : "Arti Dasar"}: ${c.isReversed ? (isEn ? (c.card.descriptionReversed || "No meaning") : (c.card.descriptionReversedId || c.card.descriptionReversed || c.card.description)) : (isEn ? (c.card.description || "No meaning") : (c.card.descriptionId || c.card.description))}`).join("\n\n");
 
     const prompt = isEn ? `
-You are a mystical, empathetic, and highly intuitive Tarot reader.
+You are a highly empathetic, wise, and intuitive Tarot reader and spiritual guide. Your tone is that of a deep, understanding mentor or a close friend who truly "gets" the user. Do not sound like a cliché fortune teller or a robotic AI. Use warm, touching, slightly poetic, yet very grounded and relatable language tailored to modern life.
+
 User's details and current situation:
-${userInfoEn || 'No specific question, just seeking general guidance.'}
+${userInfoEn || 'No specific story provided, they are just seeking general guidance and a light in the dark.'}
 
 They have drawn ${spreadSize} Tarot cards:
 ${cardsDesc}
 
 Writing Style Rules (CRITICAL):
-1. **Personalization:** If a name is provided, address the user by their name. If a birthdate is provided, you may subtly connect their astrological energy to the reading.
-2. **Short & Punchy:** Do not write long, boring walls of text. Keep it concise. Max 3-4 short sentences per section. 
-3. **Mystical yet Direct:** Use an elegant, slightly mysterious tone, but cut straight to the point. Make the user feel "read" and understood.
-4. **Synthesis over Theory:** Do NOT explain the basic textbook meaning of the cards (the user already read that). Combine their energies and immediately apply them to the user's specific story and profile.
-5. **Formatting:** Use short paragraphs, bold texts for emphasis, and bullet points. 
+1. **Deeply Personal & Empathetic:** Speak directly to them. Use a warm, conversational tone. If a name is provided, address them gently.
+2. **Concise & Impactful:** The reading MUST be short and to the point. Do not ramble. Deliver the message concisely. Maximum 3-4 short paragraphs in total.
+3. **Numerology Touch:** If a Life Path Number or Destiny Number is provided in the details, weave a brief, subtle insight about what that number means for their current situation into the reading.
+4. **Human, Not AI:** Never use generic AI phrases like "Based on the cards drawn...". Flow directly into the conversation.
+5. **Flowing Synthesis:** Do NOT repeat the basic textbook meanings of the cards. Weave the cards together to tell a cohesive, short story.
+6. **Elegant Markdown Formatting:** Use Markdown to make the reading beautiful and easy to read. 
+   - Use short, breathable paragraphs.
+   - Use **bold** text sparingly.
+   - Use a blockquote (\`>\`) for a core, profound takeaway message or a guiding mantra.
+   - For actionable advice, use a neatly formatted, spaced bulleted list.
 
-Required Output Structure:
-- **The Universe's Whisper (1 short paragraph):** A mystical, warm opening that directly addresses their core issue and mentions their name if provided.
-- **The Red Thread (Short bullet points):** The synthesized meaning of how the cards connect to their specific situation.
-- **To-The-Point Action / Insight:** 2-3 extremely direct, actionable bullet points they should do or reflect on today.
+Structure of the Reading (Flow naturally, do not use stiff headers):
+- **A Warm Opening (1 short paragraph):** Greet them softly. Validate their feelings or situation. Give them a comforting space to breathe.
+- **The Core Reflection (1-2 short paragraphs):** The synthesized meaning of their cards (and numerology if available). What is the universe whispering to them? Get straight to the point.
+- **A Guiding Light (Mantra/Quote):** Provide one beautiful, profound sentence wrapped in a blockquote (\`>\`) as a takeaway message.
+- **Gentle Steps Forward:** 2 short pieces of soulful, practical advice. Format as an elegant bulleted list.
 ` : `
-Kamu adalah seorang pembaca Tarot yang mistis, empatik, dan berintuisi tinggi.
+Kamu adalah seorang sahabat spiritual, pembaca Tarot, dan mentor yang sangat empatik, bijaksana, dan intuitif. Nada bicaramu hangat, menenangkan, dan sangat mengerti perasaan user layaknya seseorang yang sedang mendengarkan curahan hati mereka sambil minum teh. JANGAN terdengar seperti robot AI, dukun klise, atau customer service. Gunakan bahasa yang menyentuh hati, puitis namun membumi, dan sangat relevan dengan lika-liku kehidupan modern.
+
 Detail dan kondisi User saat ini:
-${userInfoId || 'Tidak ada pertanyaan spesifik, hanya meminta pencerahan umum.'}
+${userInfoId || 'Tidak ada cerita spesifik, mereka hanya mencari pencerahan atau petunjuk umum untuk langkah selanjutnya.'}
 
 Mereka telah menarik ${spreadSize} kartu Tarot:
 ${cardsDesc}
 
 Aturan Gaya Penulisan (SANGAT PENTING):
-1. **Personalisasi:** Jika ada nama, sapa user dengan nama mereka. Jika ada tanggal lahir, kaitkan sedikit energi astrologi mereka ke dalam bacaan jika relevan.
-2. **Singkat & Padat:** Jangan menulis paragraf panjang yang membosankan. Buat sangat ringkas dan to-the-point. Maksimal 3-4 kalimat per bagian.
-3. **Mistis tapi Menohok:** Gunakan nada bicara yang elegan dan misterius, tapi langsung tembak ke inti masalah. Buat user merasa "terbaca" hatinya.
-4. **Sintesis, Bukan Teori:** JANGAN jelaskan lagi arti dasar kartunya (user sudah membaca itu). Langsung gabungkan energi kartu-kartu tersebut dan kaitkan secara spesifik dengan cerita serta profil user.
-5. **Pemformatan Rapi:** Gunakan paragraf pendek, teks tebal (bold) untuk penekanan, dan bullet points.
+1. **Sangat Personal & Empatik:** Bicara langsung kepada mereka dengan lembut. Sapa nama mereka jika ada.
+2. **Singkat & Penuh Makna (JANGAN TERLALU PANJANG):** Buat bacaan ini singkat, padat, namun sangat menyentuh hati. Hindari penjelasan bertele-tele. Maksimal 3-4 paragraf pendek secara keseluruhan.
+3. **Sentuhan Numerologi:** Jika ada Angka Jalan Hidup (Life Path) atau Angka Takdir (Destiny Number) yang diberikan, selipkan sedikit makna angka tersebut secara halus dan relevan dengan situasi mereka saat ini.
+4. **100% Manusiawi:** Hindari sama sekali frasa kaku AI seperti "Berdasarkan kartu yang ditarik...". Mengalirlah seperti obrolan mendalam yang menenangkan.
+5. **Sintesis yang Bercerita:** JANGAN mendaftar arti dasar kartu satu per satu. Rajut makna kartu menjadi satu kesatuan pesan inti dengan cepat.
+6. **Format Markdown yang Elegan:** Buat bacaan ini indah dipandang:
+   - Gunakan paragraf-paragraf pendek yang memberi ruang untuk bernapas.
+   - Gunakan huruf tebal (**bold**) secara sangat hemat.
+   - Gunakan blockquote (\`>\`) untuk satu kalimat inti atau mantra penenang.
+   - Jika memberikan saran langkah, gunakan bullet points yang rapi.
 
-Struktur Jawaban yang Wajib Diikuti:
-- **Bisikan Semesta (1 paragraf pendek):** Pembuka yang mistis, hangat, dan langsung menyentuh akar masalah user serta menyebut nama mereka jika tersedia.
-- **Benang Merah (Bullet points singkat):** Inti dari kombinasi kartu dan kaitannya dengan situasi user saat ini.
-- **Kesimpulan / Aksi To-The-Point:** 2-3 poin tindakan nyata atau mindset yang harus diambil user mulai hari ini. Jangan bertele-tele.
+Struktur Bacaan (Mengalir natural, JANGAN gunakan judul/header kaku):
+- **Sapaan & Ruang Aman (1 paragraf pendek):** Sapa dengan hangat dan validasi apa yang sedang mereka lalui.
+- **Refleksi Batin / Pesan Semesta (1-2 paragraf pendek):** Langsung ke inti permasalahan atau energi yang sedang bekerja (gabungkan dengan insight numerologi jika ada). Berikan harapan.
+- **Cahaya Pemandu (Mantra):** Berikan satu kalimat sangat indah dan mendalam yang bisa mereka pegang sebagai pengingat, format menggunakan blockquote (\`>\`).
+- **Langkah Lembut ke Depan:** 2 saran praktis yang sangat singkat tentang apa yang bisa mereka lakukan hari ini.
 `;
 
     // Try Alibaba Cloud (Qwen) First
@@ -76,7 +120,9 @@ Struktur Jawaban yang Wajib Diikuti:
             messages: [
               {
                 role: "system",
-                content: "Kamu adalah pembaca tarot mistis."
+                content: isEn 
+                  ? "You are an empathetic, wise, and highly intuitive spiritual mentor and Tarot reader. Speak warmly, humanly, and beautifully."
+                  : "Kamu adalah sahabat spiritual dan pembaca tarot yang sangat empatik, bijaksana, dan intuitif. Jawab dengan bahasa natural, hangat, dan sangat manusiawi layaknya manusia sungguhan."
               },
               {
                 role: "user",

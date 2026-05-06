@@ -33,11 +33,7 @@ export default function TarotReading() {
 
   const generateSummary = async () => {
     setIsGenerating(true);
-    let formattedBirthDate = birthDate;
-    if (birthDate) {
-      const [y, m, d] = birthDate.split("-");
-      if (y && m && d) formattedBirthDate = `${d}/${m}/${y}`;
-    }
+    const formattedBirthDate = birthDate;
 
     try {
       const res = await fetch("/api/tarot-summary", {
@@ -60,6 +56,19 @@ export default function TarotReading() {
     } finally {
       setIsGenerating(false);
     }
+  };
+
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let val = e.target.value.replace(/\D/g, "");
+    if (val.length > 8) val = val.slice(0, 8);
+    
+    if (val.length >= 5) {
+      val = `${val.slice(0, 2)}/${val.slice(2, 4)}/${val.slice(4)}`;
+    } else if (val.length >= 3) {
+      val = `${val.slice(0, 2)}/${val.slice(2)}`;
+    }
+    
+    setBirthDate(val);
   };
 
   const formatDateDisplay = (dateStr: string) => {
@@ -164,16 +173,12 @@ export default function TarotReading() {
                 <div className="relative group">
                   <CalendarBlank className="absolute right-4 top-1/2 -translate-y-1/2 text-zinc-500 group-hover:text-rose-500 transition-colors pointer-events-none w-5 h-5 z-10" />
                   <input
-                    type="date"
+                    type="text"
                     value={birthDate}
-                    onChange={(e) => setBirthDate(e.target.value)}
-                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl p-4 pr-12 text-zinc-100 focus:outline-none focus:ring-1 focus:ring-rose-500/50 transition-all cursor-pointer placeholder:text-zinc-600 appearance-none"
+                    onChange={handleDateChange}
+                    placeholder="DD/MM/YYYY"
+                    className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl p-4 pr-12 text-zinc-100 focus:outline-none focus:ring-1 focus:ring-rose-500/50 transition-all placeholder:text-zinc-600"
                   />
-                  {!birthDate && (
-                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-600 pointer-events-none text-sm">
-                      DD/MM/YYYY
-                    </span>
-                  )}
                 </div>
               </div>
             </div>
@@ -480,7 +485,7 @@ export default function TarotReading() {
                       <MagicWand weight="fill" className="w-6 h-6" />
                       <h3 className="text-xl font-medium tracking-tight">{language === "id" ? "Pesan Semesta Untukmu" : "Message from the Universe"}</h3>
                     </div>
-                    <div className="prose prose-invert prose-zinc max-w-none prose-p:leading-relaxed prose-headings:font-medium prose-a:text-rose-500 prose-p:my-3 prose-headings:mb-2 prose-headings:mt-6 prose-ul:my-2 prose-li:my-1">
+                    <div className="prose prose-invert prose-zinc max-w-none prose-p:leading-relaxed prose-headings:font-medium prose-a:text-rose-500 prose-p:my-3 prose-headings:mb-2 prose-headings:mt-6 prose-ul:my-2 prose-li:my-1 prose-blockquote:border-l-rose-500 prose-blockquote:bg-rose-500/5 prose-blockquote:py-2 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-blockquote:font-medium prose-blockquote:not-italic prose-blockquote:my-6 prose-strong:text-rose-400">
                       <div className="text-zinc-300 text-lg">
                         <ReactMarkdown>{summary}</ReactMarkdown>
                       </div>

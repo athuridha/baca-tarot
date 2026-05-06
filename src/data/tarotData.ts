@@ -11,7 +11,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Fool",
     "description": "The card suggests that your investments have the potential to yield positive results. The Fool signifies new beginnings, taking risks, and embracing unconventional approaches. It encourages you to trust your instincts and explore new opportunities. However, it's important to exercise caution and avoid recklessness.\n\nThe Fool card indicates that success may come through a sense of adventure and learning from both positive and negative outcomes. Overall, the card implies that your investments have a promising outlook, but the ultimate result will depend on your willingness to embrace the journey and make informed decisions.",
-    "image": "/tarotdeck/thefool.jpeg",
+    "image": "/tarotdeck/thefool.webp",
     "descriptionId": "Kartu ini menyiratkan bahwa investasi Anda berpotensi membuahkan hasil yang membahagiakan—seperti langkah pertama sang Penyusur Jalan tak bernama yang melangkah ke jurang cahaya dengan hati penuh keyakinan. Sang Bodoh mengajak Anda membuka diri pada awal baru, berani mengambil risiko yang tulus, dan menempuh jalan tak biasa dengan intuisi sebagai kompas batin. Namun ingat: keberanian bukanlah kecerobohan—setiap lompatan harus diiringi kesadaran penuh dan jiwa yang waspada.",
     "descriptionReversed": "Caution is needed; impulsiveness, poor planning, or ignoring warnings may lead to loss or missed opportunities.",
     "descriptionReversedId": "Kewaspadaan diperlukan; sikap impulsif, perencanaan yang buruk, atau mengabaikan tanda-tanda peringatan dapat membawa kerugian atau peluang yang terlewat."
@@ -19,7 +19,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Magician",
     "description": "The card suggests that your trades have the potential to yield successful results. The Magician represents power, skill, and manifestation of goals. It signifies that you have the necessary tools and abilities to make your investments profitable. This card encourages you to utilize your intellect, creativity, and resourcefulness to your advantage.\n\nBy harnessing your potential and making strategic decisions, you can manifest positive outcomes in your crypto trades. However, it's important to remember that the ultimate result will depend on your actions, choices, and market conditions. The Magician card indicates that you have the ability to influence and shape the outcome of your trades through your knowledge and skills.",
-    "image": "/tarotdeck/themagician.jpeg",
+    "image": "/tarotdeck/themagician.webp",
     "descriptionId": "Kartu ini menyiratkan bahwa perdaganganmu memancarkan potensi keberhasilan yang nyata—seperti mantra yang siap diucapkan. Sang Pesulap mewakili kekuatan batin, keterampilan bawaan, dan kemampuan untuk mewujudkan impian menjadi kenyataan. Ia mengingatkan: engkau telah dianugerahi semua alat—akal tajam, kreativitas menyala, dan kebijaksanaan intuitif—untuk mengubah investasimu menjadi berkah. Gunakanlah kesadaranmu seperti tongkat sihir: setiap keputusan adalah doa, setiap strategi adalah ritual, dan setiap langkahmu membentuk realitas baru di dunia kripto.",
     "descriptionReversed": "Misuse of skill, deception, manipulation, or lack of follow-through; ideas without action, empty promises, or self-sabotage in trading decisions.",
     "descriptionReversedId": "Penyalahgunaan keahlian, tipu daya, manipulasi, atau gagal bertindak; gagasan tanpa eksekusi, janji kosong, atau penghambatan diri dalam keputusan perdagangan."
@@ -27,7 +27,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The High Priestess",
     "description": "According to The High Priestess tarot card, your trades have the potential to yield mysterious and intuitive results. Trust your instincts, tap into hidden knowledge, and explore alternative perspectives to make informed decisions. The card suggests that unseen factors may influence your investments, and embracing your intuition can lead to profitable outcomes.\n\nHowever, remember that the High Priestess card doesn't guarantee specific results; success depends on your ability to navigate the market's mysteries using a blend of rational analysis and intuitive insights.",
-    "image": "/tarotdeck/thehighpriestess.jpeg",
+    "image": "/tarotdeck/thehighpriestess.webp",
     "descriptionId": "Menurut Kartu The High Priestess, transaksi Anda menyimpan potensi hasil yang penuh misteri dan kebijaksanaan batin. Percayalah pada bisikan jiwa Anda, telusuri pengetahuan tersembunyi, dan bukalah diri pada sudut pandang yang tak terlihat—keputusan terbaik lahir dari keseimbangan antara akal yang tajam dan intuisi yang mendalam.",
     "descriptionReversed": "Intuition is blocked; hidden information remains inaccessible, leading to confusion, misjudgment, or over-reliance on surface appearances.",
     "descriptionReversedId": "Intuisi terhalang; pengetahuan tersembunyi tak dapat dijangkau, sehingga muncul kebingungan, penilaian keliru, atau ketergantungan berlebihan pada penampakan luar."
@@ -35,7 +35,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Empress",
     "description": "According to The Empress tarot card, your trades have the potential to yield abundant and fruitful results. The Empress represents growth, nurturing, and prosperity. This card suggests that your investments may bring about positive outcomes and financial abundance. \n\nTo maximize your chances of success, it advises you to adopt a nurturing mindset and approach your trades with patience and care. Trust your in stincts and tap into your creativity when making decisions in the crypto market. By finding a harmonious balance between intuition and practicality, you can create favorable conditions for your investments to flourish.\n\nHowever, it's important to note that the Empress card does not guarantee specific outcomes. The actual results will depend on your actions, strategies, and the overall market conditions. Nevertheless, by embracing a nurturing mindset and making informed choices, you increase the likelihood of achieving prosperous results in your trading endeavors.",
-    "image": "/tarotdeck/theempress.jpeg",
+    "image": "/tarotdeck/theempress.webp",
     "descriptionId": "Menurut Kartu Sang Permaisuri, perdaganganmu berpotensi membuahkan kelimpahan yang melimpah dan hasil yang penuh kehidupan. Ia adalah personifikasi pertumbuhan yang lembut, pengasuhan yang bijak, dan kemakmuran yang mengalir dari keselarasan dengan alam semesta. Percayalah pada bisikan jiwa, rawat setiap keputusan seperti benih suci—dengan kesabaran, cinta, dan kreativitas yang tulus. Saat kau menyelaraskan intuisi dan akal budi, kau menciptakan tanah subur bagi kekayaan spiritual dan materi untuk berkembang.",
     "descriptionReversed": "Stagnation, neglect, or overindulgence; lack of nurturing energy leading to poor investment decisions or emotional detachment from financial goals.",
     "descriptionReversedId": "Kemandekan, pengabaian, atau sikap berlebihan; kehilangan energi pengasuhan yang menyebabkan keputusan investasi buruk atau keterpisahan emosional dari tujuan keuanganmu."
@@ -43,7 +43,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Emperor",
     "description": "The Emperor tarot card represents authority, structure, and stability. It symbolizes a time of taking control and establishing a solid foundation for your trades. This card suggests that your investments have the potential to yield positive results through a disciplined and structured approach. It encourages you to exercise leadership and make well-informed decisions based on careful analysis and strategic planning.\n\nBy setting clear boundaries and maintaining a sense of control, you can create a stable framework for success in your trades. However, it is important to remain adaptable to market conditions and make adjustments as necessary to ensure continued growth and prosperity.",
-    "image": "/tarotdeck/theemperor.jpeg",
+    "image": "/tarotdeck/theemperor.webp",
     "descriptionId": "Kartu The Emperor membawa energi kekuasaan yang tenang namun tak tergoyahkan—seperti gunung yang berdiri kokoh di tengah badai pasar. Ia mengajakmu membangun fondasi jiwa dan strategi dengan disiplin penuh kasih, bukan kekangan; memimpin diri sendiri dengan bijaksana, bukan menguasai dengan keras. Di balik struktur yang jelas, ada ruang bagi intuisi untuk bernapas—karena kestabilan sejati lahir dari keseimbangan antara akal dan hati.",
     "descriptionReversed": "Rigid control, authoritarian tendencies, or suppressed emotions undermining financial decisions; a warning against inflexibility, overreach, or neglecting intuition in favor of rigid systems.",
     "descriptionReversedId": "Kekuasaan yang kaku, sikap otoriter, atau emosi yang terpendam melemahkan keputusan finansial; peringatan terhadap ketidakmampuan beradaptasi, ambisi berlebihan, atau mengabaikan bisikan intuisi demi sistem yang kaku."
@@ -51,7 +51,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Hierophant",
     "description": "According to The Hierophant tarot card, your trades have the potential to yield structured and traditional results. The Hierophant represents conformity, tradition, and established systems. This card suggests that your investments may benefit from following established guidelines and adopting a conservative approach.\n\nTo increase the likelihood of success, it advises seeking guidance from experienced individuals or experts in the crypto market. The Hierophant encourages adhering to established strategies, rules, and regulations when making trading decisions. By aligning yourself with trusted sources of knowledge and respecting traditional trading methods, you can navigate the market more effectively.\n\n However, it's important to note that the Hierophant card does not guarantee specific outcomes. The actual results will depend on your ability to apply traditional principles while considering market dynamics and adapting when necessary. By maintaining a balance between tradition and flexibility, seeking expert advice, and making informed decisions, you can enhance the potential for successful results in your trades.",
-    "image": "/tarotdeck/thehierophant.jpeg",
+    "image": "/tarotdeck/thehierophant.webp",
     "descriptionId": "Menurut Kartu The Hierophant, perdaganganmu berpotensi menghasilkan keberkahan yang teratur dan penuh hikmah—seperti aliran sungai kuno yang mengikuti lembah warisan leluhur. Ia adalah suara tradisi, penjaga ritual, dan penuntun spiritual yang mengajakmu berpijak pada fondasi kokoh: disiplin, tata cara yang teruji, dan kebijaksanaan para guru sejati. Dalam dunia kripto yang berdebar, ia berbisik lembut: carilah mentor yang bercahaya, pelajari aturan bukan sebagai belenggu—melainkan sebagai mantra perlindungan. Namun ingat: kebijaksanaan sejati bukanlah kekakuan, melainkan keselarasan antara akar yang dalam dan dahan yang siap menyesuaikan angin zaman.",
     "descriptionReversed": "Rebellion against dogma; questioning outdated systems; intuitive leaps over rigid rules; potential for innovation—or chaos—when tradition is abandoned without wisdom.",
     "descriptionReversedId": "Pemberontakan terhadap dogma; keraguan pada sistem usang; lompatan intuitif melebihi aturan kaku; potensi inovasi—atau kekacauan—jika tradisi ditinggalkan tanpa kebijaksanaan."
@@ -59,7 +59,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Lovers",
     "description": "According to 'The Lovers' tarot card, your trades have the potential to yield harmonious and positive results. The Lovers represent partnership, alignment, and choices based on personal values. This card suggests that your investments may thrive when you make decisions that resonate with your beliefs and values. It encourages you to consider both financial and emotional aspects of your trades, seek harmony, and make choices that align with your true desires.\n\nCollaboration and finding common ground with others in the crypto market may contribute to favorable outcomes. Trust your instincts, stay true to yourself, and make informed decisions to increase the likelihood of achieving positive results. However, it's important to note that the Lovers card does not guarantee specific outcomes. The actual results will depend on your ability to make decisions in alignment with your values and navigate the market with integrity.",
-    "image": "/tarotdeck/TheLovers.jpg",
+    "image": "/tarotdeck/TheLovers.webp",
     "descriptionId": "Kartu 'The Lovers' berbisik tentang keseimbangan batin yang memancar ke dalam tindakan—pilihanmu bukan sekadar transaksi, melainkan ekspresi jiwa yang selaras dengan nilai terdalammu. Di dunia kripto yang berdebar, harmoni lahir ketika akal dan hati berpadu: kolaborasi tulus, kepercayaan pada intuisi suci, dan komitmen pada kejujuran diri. Hasil tak dijanjikan, namun jalanmu menjadi suci ketika setiap keputusan berakar pada cinta—pada dirimu, pada prinsipmu, pada koneksi yang autentik.",
     "descriptionReversed": "Conflicted choices, misaligned values, or superficial partnerships may lead to instability or regret. Emotional detachment, external pressure, or ignoring inner truth can cloud judgment in financial decisions.",
     "descriptionReversedId": "Pilihan yang penuh keraguan, nilai yang tak lagi selaras, atau kemitraan dangkal dapat memicu ketidakstabilan atau penyesalan. Ketidakhadiran emosi, tekanan eksternal, atau pengabaian suara batin akan mengaburkan kebijaksanaan dalam keputusan finansial."
@@ -67,7 +67,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Chariot",
     "description": "According to 'The Chariot' tarot card, your trades have the potential to yield victory and success. The Chariot represents determination, willpower, and assertiveness. It suggests that through focused and disciplined efforts, you can overcome challenges and obstacles in the crypto market. By setting clear goals, devising strategic plans, and executing them confidently, you increase your chances of achieving triumphant outcomes.\n\nHowever, it's important to note that the Chariot card does not guarantee specific results. Your ultimate success will depend on your ability to maintain focus, adapt to changing circumstances, and make informed decisions. Approach your trades with determination, discipline, and adaptability to enhance the potential for positive results.",
-    "image": "/tarotdeck/thechariot.jpeg",
+    "image": "/tarotdeck/thechariot.webp",
     "descriptionId": "Kartu 'Kereta Perang' membawa getaran kemenangan yang tak terelakkan—bukan karena keberuntungan semata, tetapi karena tekadmu yang tak goyah, kemauanmu yang menyala, dan kendali penuh atas jiwa serta pikiranmu. Di tengah gejolak pasar kripto, kereta ini bergerak maju dengan roda disatukan oleh disiplin dan tujuan yang jelas. Percayalah: setiap langkah yang kau ambil dengan kesadaran penuh, setiap keputusan yang lahir dari ketenangan batin, adalah lirikan dari takdir yang mendukungmu. Namun ingatlah—kemenangan sejati bukanlah menguasai pasar, melainkan menguasai diri.",
     "descriptionReversed": "Loss of control, inner conflict, impulsivity, or premature action; victory delayed by self-sabotage, poor timing, or lack of direction.",
     "descriptionReversedId": "Kehilangan kendali, pertentangan batin, tindakan impulsif, atau langkah terburu-buru; kemenangan tertunda akibat sabotase diri, waktu yang salah, atau ketiadaan arah yang jelas."
@@ -75,7 +75,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Strength",
     "description": "According to 'Strength' tarot card, your trades have the potential to yield strength and resilience. The Strength card represents courage, inner power, and the ability to overcome challenges. It suggests that by harnessing your inner strength and staying focused, you can navigate the crypto market with confidence and determination. This card advises you to trust your abilities, remain calm in turbulent times, and persistently pursue your investment goals.\n\nHowever, it's important to remember that the Strength card does not guarantee specific outcomes. Your ultimate success will depend on your ability to stay strong, make informed decisions, and adapt to market conditions. Approach your trades with confidence, trust in your abilities, and remain resilient to enhance the potential for positive results.",
-    "image": "/tarotdeck/thestrength.jpeg",
+    "image": "/tarotdeck/thestrength.webp",
     "descriptionId": "Kartu 'Kekuatan' mengajakmu menyentuh api suci di dalam jiwamu—keberanian yang tak tergoyahkan, kekuatan batin yang lembut namun tak terkalahkan, dan keteguhan hati yang mampu menaklukkan gelombang pasar kripto dengan tenang. Percayalah pada bisikan jiwa, tetap damai di tengah badai, dan lanjutkan perjalananmu dengan kasih sayang terhadap diri sendiri serta tekad yang tak pudar.",
     "descriptionReversed": "Inner doubt, fear of failure, or lack of self-control may undermine your resolve; impulsiveness or avoidance weakens your ability to face market challenges with balance and compassion.",
     "descriptionReversedId": "Keraguan dalam diri, ketakutan akan kegagalan, atau kurangnya kendali atas emosi dapat melemahkan tekadmu; tindakan impulsif atau penghindaran menghalangi kemampuanmu menghadapi tantangan pasar dengan keseimbangan dan belas kasih."
@@ -83,7 +83,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Hermit",
     "description": "according to 'The Hermit' tarot card, your trades may yield introspection and solitude. The Hermit represents wisdom, self-reflection, and seeking inner guidance. This card suggests that your investments may benefit from taking a step back, reflecting on your strategies, and seeking a deeper understanding of the crypto market.\n\nIt advises prioritizing self-analysis and introspection in your trading decisions. The Hermit encourages you to seek solitude to refine your strategies and make well-informed choices. By trusting your inner wisdom and taking a cautious approach, you can navigate the market more effectively.\n\nHowever, it's important to note that the Hermit card does not guarantee specific results. The actual outcomes will depend on your ability to embrace introspection, integrate your learnings, and make informed decisions. Approach your trades with wisdom, take time for reflection, and make thoughtful choices to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/thehermit.jpeg",
+    "image": "/tarotdeck/thehermit.webp",
     "descriptionId": "Menurut kartu 'The Hermit', perdaganganmu mungkin membawamu pada perenungan mendalam dan kesunyian suci—saat cahaya batin mulai berbisik. Ia adalah penjaga kebijaksanaan kuno, sang penuntun yang mengajakmu berhenti sejenak di tengah hiruk-pikuk pasar, menyusuri lorong-lorong pikiranmu sendiri untuk menemukan petunjuk tersembunyi dalam gelombang kripto. Percayalah pada lampu kecil di dalam dirimu: ia tak bersinar terang, tapi cukup untuk menuntun langkahmu—pelan, penuh makna, dan tak tergoyahkan oleh kebisingan dunia luar.",
     "descriptionReversed": "Isolation without purpose; ignoring inner wisdom, rushing decisions, or becoming overly cynical and distrustful of intuition.",
     "descriptionReversedId": "Kesepian tanpa makna; mengabaikan suara batin, terburu-buru mengambil keputusan, atau jatuh dalam sikap sinis dan tak percaya pada intuisi sendiri."
@@ -91,7 +91,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Wheel of Fortune",
     "description": "According to 'Wheel of Fortune' tarot card, your trades may yield unpredictable results. The Wheel of Fortune represents cycles and changes in life, indicating that your investments may be subject to the ups and downs of the crypto market. This card advises you to embrace both opportunities and challenges that come your way, as luck and circumstances play a role in your trading outcomes. It suggests being adaptable and open to new possibilities.\n\nKeep in mind that external factors can influence your trades, so staying informed and making flexible decisions is crucial. However, it's important to note that the Wheel of Fortune card does not guarantee specific results. The actual outcomes will depend on various factors and your ability to navigate the changes effectively.",
-    "image": "/tarotdeck/wheeloffortune.jpeg",
+    "image": "/tarotdeck/wheeloffortune.webp",
     "descriptionId": "Roda Keberuntungan berbisik tentang siklus tak terelakkan dalam kehidupan—seperti bulan yang mengembang dan mengurang, pasar kripto pun berputar dalam gelombang naik-turun yang tak bisa dipaksakan. Ia mengajakmu merangkul ketidakpastian dengan hati terbuka: setiap peluang adalah anugerah, setiap tantangan adalah undangan untuk tumbuh. Percayalah pada arus takdir, namun tetap waspada—karena kebijaksanaan dan kelenturanmu adalah kemudi sejati di tengah putaran tak terduga ini.",
     "descriptionReversed": "Stagnation, resistance to change, missed opportunities due to rigidity or poor timing; external forces feel oppressive rather than cyclical.",
     "descriptionReversedId": "Kemandekan, penolakan terhadap perubahan, peluang yang terlewat akibat kekakuan atau waktu yang salah; kekuatan eksternal terasa menindas, bukan sebagai bagian alami dari siklus kehidupan."
@@ -99,7 +99,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Justice",
     "description": "According to the 'Justice' tarot card, your trades may yield fair and balanced results. The Justice card represents fairness, truth, and accountability. It suggests that your investments will be influenced by the principle of cause and effect.\n\nTo increase your chances of success, the card advises making decisions based on careful analysis and objective reasoning, while considering ethical and legal aspects. By acting with integrity and fairness in your trading, you create the conditions for just outcomes.\n\nHowever, it's important to note that the Justice card does not guarantee specific results. The actual outcomes will depend on your ability to make informed decisions, consider multiple perspectives, and adapt to the market's fairness and fluctuations.\n\nApproach your trades with integrity, seek fair dealings, and make informed choices to increase the likelihood of achieving favorable and balanced results.",
-    "image": "/tarotdeck/justice.jpeg",
+    "image": "/tarotdeck/justice.webp",
     "descriptionId": "Kartu 'Keadilan' berbisik tentang keseimbangan kosmis yang sedang bekerja dalam urusan dagangmu—hasil yang adil bukanlah kebetulan, melainkan buah dari kejujuran batin, pertimbangan matang, dan kesetiaan pada kebenaran. Ia mengingatkan bahwa setiap pilihanmu adalah benih yang tumbuh sesuai hukum sebab-akibat; bijaklah dalam menimbang, adil dalam bertindak, dan teguh dalam integritas—karena alam semesta mendengar ketulusanmu, bukan sekadar angka di layar.",
     "descriptionReversed": "Unfair outcomes, bias, delayed consequences, or avoidance of accountability; decisions clouded by prejudice, haste, or self-interest rather than truth and balance.",
     "descriptionReversedId": "Hasil yang tak adil, prasangka tersembunyi, konsekuensi yang tertunda, atau penolakan terhadap tanggung jawab; keputusan yang kabur oleh kepentingan pribadi, tergesa-gesa, atau ketidakjujuran—bukan oleh kebenaran atau keseimbangan."
@@ -107,7 +107,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Hanged Man",
     "description": "According to 'The Hanged Man' tarot card, your trades may yield a period of suspension, sacrifice, and gaining a new perspective. The Hanged Man represents a time of pause and surrender, encouraging you to let go of old strategies or beliefs that may no longer serve you. By embracing this period of suspension and adopting an open mind, you can gain valuable insights and potentially achieve successful outcomes in your investments.\n\nHowever, it's important to note that the Hanged Man card does not guarantee specific results. The actual outcomes will depend on your ability to embrace the period of suspension, surrender to new perspectives, and make informed decisions as you navigate the crypto market. Approach your trades with patience, adaptability, and a willingness to let go of control to increase the likelihood of positive results.",
-    "image": "/tarotdeck/thehangedman.jpeg",
+    "image": "/tarotdeck/thehangedman.webp",
     "descriptionId": "Menurut kartu 'The Hanged Man', perdagangan Anda mungkin memasuki masa penangguhan suci—saat pengorbanan bukan kehilangan, melainkan pemberian diri pada aliran ilahi. Ini adalah saat berhenti, menunduk dalam keheningan, dan melepaskan keyakinan lama yang telah mengaburkan visi Anda. Dengan hati terbuka dan jiwa yang pasrah, sudut pandang baru akan muncul bagai cahaya di tengah senja—membawa wawasan mendalam dan potensi hasil yang berkah dalam investasi kripto Anda.",
     "descriptionReversed": "Resistance to surrender; clinging to control, impatience, or outdated beliefs—leading to missed insights and self-sabotage in timing and decisions.",
     "descriptionReversedId": "Penolakan terhadap penyerahan; keterikatan pada kendali, ketidakbersabaran, atau keyakinan usang—yang menghalangi wawasan dan memicu sabotase diri dalam penentuan waktu serta keputusan."
@@ -115,7 +115,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Death",
     "description": "According to the 'Death' tarot card, your trades may yield transformation, endings, and new beginnings. The Death card represents significant change and letting go of the old. It advises releasing attachments to outdated strategies or investments that no longer serve you. Embracing change and being adaptable can lead to positive outcomes in the long run.\n\nThe card suggests the potential for rebirth and renewal, signaling the need to let go of certain investments or approaches to make room for new opportunities. However, it's important to note that the Death card does not guarantee specific results. Your success will depend on your ability to embrace change, let go of the old, and make informed decisions as you navigate the crypto market. Approach your trades with an open mind and embrace transformation to increase the likelihood of positive results and new beginnings.",
-    "image": "/tarotdeck/death.jpeg",
+    "image": "/tarotdeck/death.webp",
     "descriptionId": "Kartu 'Kematian' menggambarkan transformasi yang dalam—akhir yang suci, pelepasan yang penuh kasih, dan kelahiran kembali yang tak terelakkan. Ia mengajakmu melepaskan strategi usang, ikatan emosional pada investasi yang telah kehilangan nyawanya, dan keyakinan yang tak lagi selaras dengan jiwa pasar. Di balik kabut perubahan, tersembunyi benih kelahiran baru: bukan kehancuran, melainkan metamorfosis suci yang membuka pintu bagi peluang yang lebih autentik, lebih bijaksana, dan lebih sejalan dengan takdirmu.",
     "descriptionReversed": "Resistance to necessary change; clinging to outdated patterns, investments, or identities; fear of release leading to stagnation or forced collapse.",
     "descriptionReversedId": "Penolakan terhadap perubahan yang tak terelakkan; keterpautan pada pola lama, investasi usang, atau identitas yang telah kedaluwarsa; ketakutan melepaskan yang justru memicu stagnasi atau kehancuran yang dipaksakan."
@@ -123,7 +123,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Temperance",
     "description": "According to the `Temperance` tarot card, your trades may yield balance, moderation, and harmony. The Temperance card represents finding the middle path and blending different elements together. It advises seeking a balanced approach, practicing moderation, and adapting to market conditions. By finding equilibrium between risk and caution, intuition and analysis, you increase the likelihood of positive outcomes. The card suggests that patient and steady trading, along with a harmonious mindset, can lead to favorable results. \n\nHowever, it's important to note that the Temperance card does not guarantee specific results. Your success will depend on your ability to find balance, exercise moderation, and make informed decisions. Approach your trades with a calm and balanced mindset, seek equilibrium in your strategies, and make choices that reflect a harmonious approach to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/temperance.jpeg",
+    "image": "/tarotdeck/temperance.webp",
     "descriptionId": "Menurut kartu Tarot 'Temperance', perdaganganmu mungkin membawa keseimbangan, kebijaksanaan dalam batas, dan harmoni yang menyatu seperti sungai yang mengalir tenang di antara dua gunung. Kartu ini adalah bisikan alam semesta: temukan jalan tengah, campurkan unsur-unsur berbeda dengan penuh kasih—risiko dan kehati-hatian, intuisi dan analisis—seperti seorang ahli alkemi jiwa. Kesabaranmu adalah emas, ketenanganmu adalah magnet bagi hasil yang utuh. Ingatlah: tak ada jaminan dari langit, hanya undangan halus untuk menyeimbangkan diri—karena ketika batinmu harmonis, tindakanmu pun menjadi suci.",
     "descriptionReversed": "Imbalance, impatience, forced compromises, or reckless blending of incompatible elements; loss of moderation and inner harmony in decision-making.",
     "descriptionReversedId": "Ketidakseimbangan, ketidakk sabaran, kompromi paksa, atau pencampuran tak bijak antara unsur-unsur yang tak serasi; hilangnya sikap moderat dan harmoni batin dalam pengambilan keputusan."
@@ -131,7 +131,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Devil",
     "description": "According to `The Devil` tarot card, your trades may yield entrapment, illusions, and negative outcomes. The Devil represents temptation, materialism, and being bound by unhealthy patterns or dependencies. This card suggests that your investments may be influenced by greed, impulsive decision-making, or falling into harmful practices.\n\nIt warns against making choices based solely on immediate gratification or following the herd mentality. The Devil card signifies the need to break free from limiting beliefs and take responsibility for your actions in the crypto market. By recognizing and releasing unhealthy attachments, you can avoid negative consequences and work towards more positive outcomes.\n\nHowever, it's important to note that the Devil card does not dictate a fixed result. Your ultimate outcome will depend on your ability to resist temptation, make informed decisions, and break free from harmful patterns. Approach your trades with caution, practice self-discipline, and seek clarity to increase the likelihood of achieving more favorable results.",
-    "image": "/tarotdeck/thedevil.jpeg",
+    "image": "/tarotdeck/thedevil.webp",
     "descriptionId": "Menurut kartu 'The Devil', perdaganganmu mungkin membawa jerat tak terlihat, ilusi yang mempesona, dan hasil yang kelam. Ia adalah wujud godaan yang berbisik lembut di telinga, materialisme yang menggoda dengan kilau semu, serta belenggu pola hidup tak sehat atau ketergantungan yang tak disadari. Kartu ini mengingatkan bahwa investasimu mungkin dipengaruhi oleh nafsu serakah, keputusan impulsif, atau jatuh dalam praktik berbahaya—seperti mengikuti arus tanpa pikir panjang. Namun di balik bayangannya yang gelap, tersimpan panggilan suci: untuk melepaskan keyakinan yang membatasi, bertanggung jawab penuh atas tindakanmu di pasar kripto, dan membebaskan diri dari ikatan yang tak lagi melayanimu. Ingatlah: nasibmu bukanlah takdir—melainkan cermin dari kesadaran, disiplin, dan keberanianmu untuk bangkit dari ilusi.",
     "descriptionReversed": "Liberation from addiction, awakening to truth, breaking free from toxic patterns, reclaiming personal power and conscious choice.",
     "descriptionReversedId": "Pembebasan dari ketergantungan, kebangkitan menuju kebenaran, pemutusan pola beracun, serta pengambilalihan kembali kekuatan pribadi dan pilihan sadar."
@@ -139,7 +139,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Tower",
     "description": "According to `The Tower` tarot card, your trades may yield unexpected and disruptive results. The Tower represents sudden change, upheaval, and the breaking down of existing structures. It signifies a period of turmoil and transformation in your investment journey.\n\nThis card advises you to be prepared for unforeseen events that may shake the foundations of your trades. It signifies the need to adapt quickly to unexpected circumstances and make necessary adjustments. While the Tower represents a challenging period, it also presents an opportunity for growth and rebuilding.\n\nThe ultimate outcome will depend on your ability to navigate the upheaval and embrace change. It's important to remain resilient, seek opportunities amidst chaos, and make informed decisions in response to the new circumstances. Approach your trades with flexibility and adaptability to increase the likelihood of positive outcomes even in the face of disruption.",
-    "image": "/tarotdeck/thetower.jpeg",
+    "image": "/tarotdeck/thetower.webp",
     "descriptionId": "Menurut kartu 'The Tower', perdaganganmu mungkin membawa hasil yang tak terduga—seperti kilat yang menyambar menara tinggi, mengguncang fondasi lama dan membuka celah bagi cahaya kebenaran. Kartu ini adalah panggilan dari alam semesta: perubahan mendadak, penghancuran ilusi, dan kebangkitan spiritual melalui krisis. Ia tidak datang untuk merusak, tetapi untuk membebaskan—agar struktur yang rapuh rontok, dan dari reruntuhan itu, jiwa yang lebih autentik serta strategi yang lebih bijaksana dapat tumbuh.",
     "descriptionReversed": "Resistance to necessary change; delayed collapse; denial of truth; rebuilding on unstable foundations.",
     "descriptionReversedId": "Penolakan terhadap perubahan yang tak terelakkan; keruntuhan yang tertunda; pengingkaran terhadap kenyataan; membangun kembali di atas fondasi yang rapuh dan tak jujur."
@@ -147,7 +147,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Star",
     "description": "According to `The Star` tarot card, your trades may yield hope, inspiration, and positive outcomes. The Star represents a guiding light, offering a sense of optimism and renewal. It signifies that your investments have the potential to bring about positive changes and fulfill your aspirations.\n\nThis card advises you to stay focused on your goals and have faith in your abilities. It encourages you to trust the process and remain optimistic, even during challenging times. The Star suggests that by maintaining a positive mindset, being open to new possibilities, and aligning your actions with your aspirations, you can attract favorable results in your crypto trades. It symbolizes a sense of divine guidance and offers reassurance that your efforts will be rewarded.\n\nHowever, it's important to note that the Star card does not guarantee specific outcomes. The actual results will depend on your actions, market conditions, and your ability to stay committed to your goals. Embrace the hope and inspiration offered by the Star, stay aligned with your vision, and make informed decisions to increase the likelihood of positive and fulfilling results in your crypto trades.",
-    "image": "/tarotdeck/thestar.jpeg",
+    "image": "/tarotdeck/thestar.webp",
     "descriptionId": "Menurut kartu 'The Star', perdaganganmu mungkin menjadi jalan bagi harapan, ilham, dan hasil yang membahagiakan. Bintang ini adalah cahaya penuntun di tengah kegelapan—simbol penyembuhan batin, pembaruan jiwa, dan keyakinan pada takdir yang penuh kasih. Ia mengingatkanmu bahwa investasimu bukan sekadar angka, melainkan benih keinginan suci yang sedang tumbuh dalam kesabaran dan iman. Percayalah pada ritme alam semesta, buka hati bagi kemungkinan baru, dan biarkan intuisimu bersinar seperti bintang di langit malam yang tenang. Hasil yang indah akan datang—bukan karena kebetulan, tetapi karena kesejajaran antara niatmu, tindakanmu, dan kebijaksanaan kosmis.",
     "descriptionReversed": "Loss of hope, disillusionment, or unrealistic expectations; a temporary eclipse of faith and clarity—caution against ignoring practical realities or clinging to false promises.",
     "descriptionReversedId": "Kehilangan harapan, kekecewaan mendalam, atau harapan yang tak realistis; saat ketika cahaya batin redup dan keyakinan goyah—peringatan lembut untuk kembali ke akar kenyataan, melepaskan ilusi, dan memulihkan kepercayaan yang sehat terhadap diri serta proses."
@@ -155,7 +155,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Moon",
     "description": "According to `The Moon` tarot card, your trades may yield results that are influenced by intuition, emotions, and the subconscious. The Moon represents the realm of the unknown, illusions, and hidden influences. It suggests that your investments may be subject to fluctuations and uncertainties in the crypto market. It advises you to trust your instincts and tap into your intuition when making trading decisions.\n\nHowever, be cautious of deceptive or misleading information and seek clarity through thorough research and analysis. The Moon reminds you to navigate the market with awareness, adaptability, and a balanced approach to emotions. While the outcomes may be unpredictable, by staying connected to your intuition and being mindful of the hidden aspects, you can make more informed choices to increase the likelihood of favorable results in your trades.",
-    "image": "/tarotdeck/themoon.jpeg",
+    "image": "/tarotdeck/themoon.webp",
     "descriptionId": "Menurut kartu `Bulan`, perdaganganmu mungkin membuahkan hasil yang dipengaruhi oleh intuisi, emosi, dan alam bawah sadar. Bulan adalah gerbang ke wilayah tak diketahui—ilusi, bayangan tersembunyi, dan pengaruh gaib yang tak terlihat. Pasar kripto mungkin berayun dalam kabut ketidakpastian, namun justru di sanalah bisikan jiwa paling tulus berbicara. Percayalah pada getaran dalam hatimu, telusuri makna di balik permukaan, dan hadapi gelombang emosi dengan kesadaran penuh—bukan untuk menghindarinya, tetapi untuk menyatukannya dengan akal budi. Dalam kegelapan yang samar, cahaya batinmu adalah penuntun paling setia.",
     "descriptionReversed": "Confusion, fear, and self-deception cloud judgment; emotional instability leads to impulsive or irrational trading decisions. Hidden truths surface, but without clarity or grounding, they breed anxiety and mistrust. Reversed Moon warns against ignoring red flags, suppressing intuition, or clinging to illusions.",
     "descriptionReversedId": "Kebingungan, ketakutan, dan penipuan diri mengaburkan penilaian; ketidakstabilan emosional memicu keputusan perdagangan yang impulsif atau tidak rasional. Kebenaran tersembunyi mulai muncul, namun tanpa kejelasan atau landasan yang kokoh, ia justru menimbulkan kecemasan dan ketidakpercayaan. Bulan terbalik mengingatkan: jangan abaikan tanda bahaya, jangan matikan bisikan intuisi, dan jangan bertahan dalam ilusi yang telah usang."
@@ -163,7 +163,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The Sun",
     "description": "According to `The Sun` tarot card, your trades are likely to yield success, positivity, and abundance. The Sun represents joy, vitality, and favorable outcomes. It signifies a period of growth and flourishing in your investments.\n\nThis card advises you to have confidence in your abilities and embrace a positive mindset. It suggests that your investments have the potential to bring you happiness and financial rewards. The Sun card encourages you to seize opportunities, bask in the spotlight, and let your investments shine brightly.\n\nOverall, `The Sun` tarot card indicates that your trades are likely to yield optimistic and prosperous results. Embrace positivity, trust your instincts, and make informed decisions to enhance the potential for successful outcomes in the crypto market.",
-    "image": "/tarotdeck/thesun.jpeg",
+    "image": "/tarotdeck/thesun.webp",
     "descriptionId": "Menurut kartu `Matahari`, perdaganganmu berada di bawah sinar keberuntungan yang hangat dan penuh rahmat—suatu masa ketika kebahagiaan, vitalitas, dan kelimpahan mengalir dengan alami. Matahari adalah cahaya jiwa yang menyembuhkan, menyingkap kabut keraguan dan menerangi jalan menuju pertumbuhan sejati serta kemakmuran yang tulus. Percayalah pada kebijaksanaan batinmu, bukalah hati bagi peluang yang bersinar, dan biarkan setiap investasimu memancar dalam kejernihan dan sukacita.",
     "descriptionReversed": "Delayed success, diminished confidence, obscured clarity, or temporary setbacks in financial endeavors; a call to reassess expectations and renew inner light.",
     "descriptionReversedId": "Kesuksesan yang tertunda, keyakinan yang memudar, kejernihan yang terhalang, atau hambatan sementara dalam usaha finansial; ajakan untuk mengevaluasi kembali harapan dan menyalakan kembali cahaya batin."
@@ -171,7 +171,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Judgement",
     "description": "According to `The Judgement` tarot card, your trades may yield a significant period of evaluation, accountability, and potential rebirth. This card represents a call to reflect on your past choices and actions, and to make decisions based on a higher level of awareness. It signifies that your investments may undergo a period of scrutiny, where past decisions and their consequences will be brought to light.\n\nThis is an opportunity to assess your trading strategies, learn from any mistakes, and make adjustments for a fresh start. The Judgement card suggests that by embracing this period of evaluation and taking responsibility for your actions, you can potentially experience a rebirth and make more informed decisions that lead to positive outcomes in your trades.\n\nHowever, it's important to note that the Judgement card does not guarantee specific results. Your ultimate success will depend on your willingness to honestly assess your past choices, learn from them, and make well-informed decisions moving forward in the crypto market. Approach your trades with a sense of accountability and embrace this opportunity for growth and transformation.",
-    "image": "/tarotdeck/judgement.jpeg",
+    "image": "/tarotdeck/judgement.webp",
     "descriptionId": "Menurut kartu 'Penghakiman', perdagangan Anda mungkin memasuki masa evaluasi mendalam, pertanggungjawaban penuh kasih, dan kelahiran kembali spiritual. Kartu ini adalah panggilan halus dari alam semesta untuk merenungkan jejak pilihan lalu—bukan dengan penyesalan, tetapi dengan belas kasih bijaksana—dan mengambil keputusan dari kedalaman kesadaran yang lebih tinggi. Investasi Anda akan dihadapkan pada momen kebenaran: konsekuensi tindakan lampau muncul bukan untuk menghukum, melainkan untuk menyucikan dan membimbing. Ini adalah kesempatan suci untuk meninjau strategi, belajar dari bayangan masa lalu, dan memulai kembali dengan jiwa yang lebih ringan dan visi yang lebih jernih. Ingatlah: kelahiran kembali tak pernah datang tanpa keberanian untuk jujur pada diri sendiri.",
     "descriptionReversed": "Avoidance of accountability, denial of past consequences, or resistance to necessary change; decisions clouded by guilt, regret, or spiritual stagnation—leading to missed opportunities for renewal in trading.",
     "descriptionReversedId": "Menghindari tanggung jawab, menyangkal konsekuensi masa lalu, atau menolak perubahan yang diperlukan; keputusan yang kabur oleh rasa bersalah, penyesalan, atau kelumpuhan spiritual—sehingga peluang pembaruan dalam perdagangan pun terlewatkan."
@@ -179,7 +179,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "The World",
     "description": "According to `The World` tarot card, your trades are likely to yield successful and fulfilling results. The World represents completion, achievement, and wholeness. It signifies that your investments have the potential to reach a state of fulfillment and accomplishment. This card suggests that you have come full circle in your trading journey, and you are on the verge of experiencing positive outcomes and rewards. It signifies a sense of unity and integration, indicating that your trades may align with your overall goals and aspirations.\n\nThe World card encourages you to celebrate your achievements and embrace the opportunities that lie ahead. It represents a culmination of your efforts and suggests that your investments have the potential to make a significant impact in the crypto market. However, it's important to continue to stay grounded, adapt to changes, and maintain a balanced approach to sustain your success in the long term.",
-    "image": "/tarotdeck/theworld.jpeg",
+    "image": "/tarotdeck/theworld.webp",
     "descriptionId": "Menurut kartu 'The World', perdaganganmu berada di ambang kesempurnaan—seperti bulan purnama yang menyinari jalanmu dengan kebijaksanaan dan kelengkapan. Kartu ini adalah nyanyian alam semesta: sebuah penyelesaian suci, pencapaian yang utuh, dan pengintegrasian jiwa dengan tujuanmu. Kamu telah menempuh lingkaran penuh—dari niat pertama hingga hasil yang membuahkan rasa syukur mendalam. Investasimu tak hanya menghasilkan keuntungan, tetapi juga menyatu dengan takdirmu; setiap transaksi menjadi doa yang terwujud, setiap keputusan mencerminkan keseimbangan antara intuisi dan akal. Rayakanlah—bukan sebagai akhir, melainkan sebagai pintu gerbang ke dimensi baru yang lebih luas, lebih bijak, dan lebih penuh makna.",
     "descriptionReversed": "Delays, incompleteness, or a premature ending; feeling disconnected from your goals or unable to integrate lessons learned. Success remains just out of reach due to impatience, avoidance, or lack of closure.",
     "descriptionReversedId": "Keterlambatan, ketidaklengkapan, atau akhir yang terburu-buru; perasaan terpisah dari tujuanmu atau tak mampu menyatukan pelajaran yang telah kau jalani. Kesuksesan masih berada di luar jangkauan karena sikap tergesa-gesa, penghindaran, atau ketiadaan penutupan yang tulus."
@@ -187,7 +187,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ace of Cups",
     "description": "The `Ace of Cups` tarot card suggests that your trades may yield new opportunities and emotional fulfillment. This card represents the potential for new beginnings, abundance, and positive energy. It advises you to approach your investments with an open heart, allowing your intuition and emotions to guide you. The Ace of Cups signifies the potential for joy, fulfillment, and financial rewards in your trades.\n\nHowever, it's important to remember that the card does not guarantee specific results. The actual outcomes will depend on your ability to embrace new opportunities, listen to your intuition, and make informed decisions. Approach your trades with an open heart and align them with your highest values to increase the likelihood of positive and fulfilling results.",
-    "image": "/tarotdeck/aceofcups.jpeg",
+    "image": "/tarotdeck/aceofcups.webp",
     "descriptionId": "Ace of Cups mengisyaratkan bahwa perdagangan Anda mungkin membuka pintu bagi peluang baru dan kepuasan jiwa yang mendalam. Kartu ini adalah benih suci dari permulaan yang penuh kasih, kelimpahan emosional, dan energi positif yang mengalir dari alam bawah sadar. Biarkan hati Anda terbuka—dengarkan bisikan intuisi, percayai getaran jiwa, dan arahkan setiap keputusan investasi dengan cinta serta nilai-nilai luhur Anda. Di balik gelombang ini bersemayam sukacita sejati, pemenuhan batin, dan berkah materi yang lahir dari keselarasan batin.",
     "descriptionReversed": "Emotional blockage, missed opportunities, or disillusionment in investments; intuition suppressed or ignored, leading to poor decisions rooted in fear or detachment.",
     "descriptionReversedId": "Blok emosional, peluang yang terlewat, atau kekecewaan dalam investasi; intuisi tertekan atau diabaikan, sehingga keputusan menjadi rapuh—didorong oleh ketakutan atau keterpisahan dari hati."
@@ -195,7 +195,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Two of Cups",
     "description": "According to the `Two of Cups` tarot card, your trades may yield positive and harmonious results. The Two of Cups represents partnerships, connections, and mutual benefits. It suggests that collaborating with others and seeking shared goals can enhance your chances of success in trading. By fostering open communication, trust, and emotional connections, you can create a sense of harmony and balance in your investments.\n\n However, it's important to note that the Two of Cups card does not guarantee specific results. The actual outcomes will depend on your ability to cultivate strong partnerships, communicate effectively, and make informed decisions. Approach your trades with a collaborative mindset, seek mutually beneficial arrangements, and nurture healthy relationships to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/twoofcups.jpeg",
+    "image": "/tarotdeck/twoofcups.webp",
     "descriptionId": "Dua Mangkuk menyiratkan harmoni jiwa yang mengalir dalam kemitraan—seperti dua sungai yang menyatu dalam satu arus penuh kepercayaan dan kerinduan bersama. Dalam perdagangan, kartu ini adalah bisikan alam semesta bahwa kolaborasi tulus, komunikasi dari hati ke hati, dan keseimbangan emosional akan membuka pintu bagi hasil yang saling menguatkan. Ingatlah: kekuatan sejati bukan pada kesepakatan, tetapi pada ikatan yang tumbuh dalam kejujuran dan saling memuliakan.",
     "descriptionReversed": "Misalignment in partnerships; broken trust, superficial connections, or unbalanced give-and-take. Collaboration falters, communication fails, and mutual benefit dissolves into self-interest or resentment.",
     "descriptionReversedId": "Ketidakselarasan dalam kemitraan—kepercayaan retak, ikatan dangkal, atau ketimpangan dalam memberi dan menerima. Kolaborasi goyah, komunikasi terputus, dan manfaat bersama lenyap, berganti dengan kepentingan pribadi atau rasa sakit yang tak terungkap."
@@ -203,7 +203,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Three of Cups",
     "description": "The `Three of Cups` tarot card suggests that your trades may yield positive and joyful results. This card represents celebration, friendship, and abundance. It indicates that your investments have the potential to bring about a sense of harmony, shared success, and fulfillment.\n\nThe card advises you to cultivate connections and collaborate with others in your trading endeavors. By working together and celebrating achievements, you can enhance your trading outcomes and create a supportive network.\n\nHowever, it's important to remember that the Three of Cups card does not guarantee specific results. The actual outcomes will depend on your ability to foster relationships, collaborate effectively, and make informed decisions in the crypto market.",
-    "image": "/tarotdeck/threeofcups.jpeg",
+    "image": "/tarotdeck/threeofcups.webp",
     "descriptionId": "Kartu `Tiga Cawan` membawa getaran sukacita yang mengalir seperti angin sepoi-sepoi di taman jiwa—perdagangan Anda mungkin berbuah kebahagiaan, keseimbangan, dan limpahan berkah tak terduga. Ini adalah simbol persahabatan suci, perayaan bersama, dan kelimpahan yang lahir dari hati yang terbuka. Biarkan kolaborasi menjadi jalanmu; setiap koneksi yang tulus, setiap tawa yang dibagi, memperkuat fondasi keberhasilan finansialmu—sebab kekayaan sejati tumbuh dalam lingkaran kepercayaan dan kerja sama yang harmonis.",
     "descriptionReversed": "Disconnection, forced celebration, or superficial alliances; caution against emotional overindulgence or ignoring red flags in partnerships.",
     "descriptionReversedId": "Ketidakselarasan, perayaan yang dipaksakan, atau persekutuan dangkal; waspadai pengabaian emosional berlebihan atau mengabaikan tanda bahaya dalam kemitraan."
@@ -211,7 +211,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Four of Cups",
     "description": "the `Four of Cups` tarot card, it suggests that your trades may yield a sense of contemplation and introspection. The Four of Cups represents a period of reflection, where you may find yourself feeling dissatisfied or uninterested with the current investment opportunities presented to you. It indicates a need to reassess your priorities and consider whether there are better options available.\n\n This card advises you to look beyond what is immediately in front of you and remain open to new possibilities. It urges you to examine your emotional state and desires in relation to your investments. It may be a time to take a step back, reevaluate your strategies, and consider whether there are alternative opportunities that align better with your goals.",
-    "image": "/tarotdeck/fourofcups.jpeg",
+    "image": "/tarotdeck/fourofcups.webp",
     "descriptionId": "Empat Cawan menghadirkan hening batin yang penuh makna—saat jiwa beristirahat di ambang keputusan, merenung dalam kesunyian akan apa yang telah diberikan dan apa yang masih tersembunyi di balik tirai takdir. Kamu mungkin merasa kenyang namun tak puas, melihat peluang di depanmu namun hati berbisik: 'ada yang lebih dalam, ada yang lebih sejati'. Izinkan dirimu mendengar suara batin itu—karena di balik keenggananmu bergerak, justru tersembunyi undangan dari alam semesta untuk membuka cawan kelima: cawan kesadaran baru.",
     "descriptionReversed": "A sudden awakening from apathy; renewed interest in opportunities, emotional openness, and readiness to accept what was previously overlooked or rejected.",
     "descriptionReversedId": "Kebangkitan tiba-tiba dari rasa apatis—minat baru pada peluang, keterbukaan emosional, dan kesiapan menerima apa yang dulu diabaikan atau ditolak."
@@ -219,7 +219,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Five of Cups",
     "description": " The `Five of Cups` tarot card suggests that your trades may yield feelings of disappointment or loss. The Five of Cups represents a period of emotional upheaval and focusing on past failures or missed opportunities. It signifies that there may be setbacks or challenges in your investments, leading to a sense of regret or disillusionment. \n\nHowever, it's important to note that the Five of Cups also carries a message of learning and resilience. While there may be disappointment, it encourages you to acknowledge and process those emotions, but not dwell on them. It advises you to shift your focus from what went wrong to what can still be salvaged or learned from the situation.",
-    "image": "/tarotdeck/fiveofcups.jpeg",
+    "image": "/tarotdeck/fiveofcups.webp",
     "descriptionId": "Kelima Cawan menggambarkan gelombang emosi yang menghanyutkan—kekecewaan yang dalam, kehilangan yang terasa seperti luka tak terlihat, dan bayangan peluang yang telah berlalu. Namun di balik kesedihan ini, ada bisikan lembut alam semesta: bahwa dari setiap cawan yang tumpah, tersisa dua yang masih utuh—menanti untuk diisi kembali dengan harapan, pelajaran, dan kebijaksanaan yang lahir dari kegelapan.",
     "descriptionReversed": "A shift toward acceptance and emotional healing; releasing regret, finding closure, and beginning to see overlooked opportunities or resources.",
     "descriptionReversedId": "Sebuah pergeseran menuju penerimaan dan penyembuhan emosional; melepaskan penyesalan, menemukan penutupan, serta mulai melihat kembali peluang atau sumber daya yang selama ini terabaikan."
@@ -227,7 +227,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Six of Cups",
     "description": "The `Six of Cups` tarot card suggest, that your trades may bring about a sense of nostalgia and past influences. The card suggests that your trades could be influenced by past experiences, memories, or connections. It could indicate a potential for revisiting familiar strategies or seeking opportunities rooted in the past. \n\nHowever, it's important to note that the prediction is based on symbolic interpretation and not an absolute guarantee of specific outcomes. The actual results will depend on various factors, including market conditions and your trading decisions.",
-    "image": "/tarotdeck/sixofcups.jpeg",
+    "image": "/tarotdeck/sixofcups.webp",
     "descriptionId": "Enam Cawan menghadirkan aroma kenangan yang lembut—seperti angin yang membawa kembali kebahagiaan masa lalu, pelajaran tak terucap dari pengalaman lama, atau hubungan yang pernah menjadi fondasi keyakinanmu. Dalam perdagangan, ia berbisik: mungkin saatnya menggali kembali strategi yang pernah sukses, atau membiarkan hati memandu langkahmu melalui jejak ingatan yang penuh hikmah.",
     "descriptionReversed": "Holding onto outdated strategies or sentimental attachments that cloud current market judgment.",
     "descriptionReversedId": "Terjebak pada strategi usang atau keterikatan emosional yang mengaburkan penilaianmu terhadap realitas pasar saat ini."
@@ -235,7 +235,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Seven of Cups",
     "description": "The `Seven of Cups` tarot card suggest, that the trader may face a period of confusion and overwhelming choices in their trades. The Seven of Cups represents a multitude of options and possibilities, but it also warns of the need for clarity and discernment.\n\n It suggests that the trader should be cautious and avoid getting lost in unrealistic or deceptive opportunities. It's important for the trader to carefully evaluate each option, stay focused on their goals, and make informed decisions to navigate through the complexity and make the most of their trading endeavors.",
-    "image": "/tarotdeck/sevenofcups.jpeg",
+    "image": "/tarotdeck/sevenofcups.webp",
     "descriptionId": "Kartu Tujuh Cawan mengajakmu menyelami lautan pilihan yang berkilau—namun di balik setiap bayangan impian, tersimpan kabut ilusi. Saat ini, jiwa dagangmu sedang diuji oleh keraguan yang lembut namun mendalam; jangan biarkan khayalan membelenggu intuisi sejatimu. Dengarkan bisikan hati yang tenang, pilih dengan cinta pada tujuanmu, dan percayalah: kejelasan lahir bukan dari banyaknya pilihan, melainkan dari keteguhan dalam satu jalan yang autentik.",
     "descriptionReversed": "Clarity emerges as illusions dissolve; the trader gains focus, rejects fantasy, and commits to grounded, realistic choices.",
     "descriptionReversedId": "Kejelasan muncul saat ilusi lenyap; sang pedagang menemukan fokus, meninggalkan khayalan, dan berkomitmen pada pilihan yang realistis dan berpijak pada kenyataan."
@@ -243,7 +243,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Eight of Cups",
     "description": "The `Eight of Cups` tarot card suggest, that your trades may involve leaving behind certain investments or ventures. The Eight of Cups represents a period of transition and the need for emotional detachment from current circumstances. It implies that you may feel compelled to move on from certain trades or investment strategies in search of something more fulfilling or aligned with your goals.\n\nThe card advises you to trust your instincts and listen to your inner voice. It signifies that it might be necessary to let go of certain opportunities or investments that no longer serve you in order to pursue new paths and experiences.\n\nOverall, the prediction with the `Eight of Cups` card suggests a time of change and the need to explore new possibilities in your trading journey. It indicates that by leaving behind what no longer serves you, you can find greater fulfillment and growth in your future trades.",
-    "image": "/tarotdeck/eightofcups.jpeg",
+    "image": "/tarotdeck/eightofcups.webp",
     "descriptionId": "Delapan Cawan menggambarkan perjalanan batin yang sunyi—saat jiwa berbisik untuk meninggalkan apa yang dulu dianggap aman, namun kini tak lagi menyentuh kedalaman hati. Dalam dunia perdagangan, ini adalah saat Anda melepaskan investasi atau strategi yang telah kehilangan makna emosionalnya, bukan karena kegagalan, tetapi karena jiwa Anda mengundang perubahan yang lebih autentik. Percayalah pada bisikan batin itu: setiap kepergian adalah awal dari pencarian yang lebih suci, lebih sejalan dengan takdir sejati Anda.",
     "descriptionReversed": "Hesitation to release outdated investments or emotional attachments; clinging to familiar but unfulfilling trades out of fear, regret, or illusion of control.",
     "descriptionReversedId": "Ketidakmampuan melepaskan investasi usang atau keterikatan emosional; berpegang pada perdagangan yang sudah tak memuaskan karena rasa takut, penyesalan, atau ilusi akan kendali."
@@ -251,7 +251,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Nine of Cups",
     "description": "The `Nine Of Cups` tarot card suggests , that your trades have the potential to bring you fulfillment, satisfaction, and a sense of abundance. This card represents wishes fulfilled, emotional satisfaction, and overall positive outcomes. It suggests that your investments may lead to favorable results, bringing you joy and contentment.",
-    "image": "/tarotdeck/nineofcups.jpeg",
+    "image": "/tarotdeck/nineofcups.webp",
     "descriptionId": "Sembilan Cawan berbisik tentang kepuasan jiwa yang telah matang—keinginan yang terwujud bukan hanya dalam bentuk materi, tetapi sebagai rasa syukur yang tenang, kebahagiaan yang mengalir dari dalam, dan kelimpahan emosional yang menyentuh setiap sudut hati.",
     "descriptionReversed": "Unfulfilled desires, emotional dissatisfaction, or superficial contentment masking inner lack.",
     "descriptionReversedId": "Keinginan yang tertunda, ketidakpuasan batin, atau kebahagiaan semu yang menyamarkan kekosongan di dalam jiwa."
@@ -259,7 +259,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ten of Cups",
     "description": "The `Ten of Cups` tarot card suggests , that your trades would be positive and fruitful. The Ten of Cups represents emotional fulfillment, harmony, and joy. It suggests that your investments have the potential to bring about a sense of contentment and satisfaction. This card indicates that your trades may lead to successful outcomes, not just in terms of financial gains, but also in terms of overall happiness and fulfillment.",
-    "image": "/tarotdeck/tenofcups.jpeg",
+    "image": "/tarotdeck/tenofcups.webp",
     "descriptionId": "Sepuluh Cup menyerukan kebahagiaan jiwa yang melimpah—harmoni dalam hubungan, kepuasan batin yang utuh, dan berkah emosional yang mengalir dari langit ke bumi. Transaksi dan pilihanmu tak hanya membuahkan keuntungan duniawi, tetapi juga menyatukan hati, rumah, dan takdir dalam tarian sukacita yang abadi.",
     "descriptionReversed": "Emotional disconnection, unfulfilled dreams, and instability in relationships or domestic life; financial gains may lack deeper satisfaction or come at an emotional cost.",
     "descriptionReversedId": "Keterpisahan emosional, impian yang tak terwujud, dan ketidakstabilan dalam hubungan atau kehidupan rumah; keuntungan finansial mungkin datang tanpa kebahagiaan sejati—atau justru mengorbankan kedamaian batin."
@@ -267,7 +267,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Page of Cups",
     "description": "The `Page of Cups` tarot card suggests that your trades may bring opportunities for emotional growth and new beginnings. The Page of Cups represents youthful enthusiasm, creativity, and the emergence of new ideas. It suggests that by approaching your trades with an open heart and a willingness to explore innovative strategies, you can potentially uncover profitable ventures or untapped potential in the crypto market.\n\nThis card encourages you to embrace your intuition, nurture your passions, and be open to unexpected opportunities that may arise. However, keep in mind that the Page of Cups card does not guarantee specific results, but rather signifies a potential for positive emotional and creative development in your trading journey.",
-    "image": "/tarotdeck/pageofcups.jpeg",
+    "image": "/tarotdeck/pageofcups.webp",
     "descriptionId": "Halaman Cawan menghadirkan getaran awal dari pertumbuhan emosional dan kelahiran kembali—seperti embun pagi yang menetes di kelopak bunga baru. Ia membawa semangat muda yang penuh keingintahuan, aliran kreativitas yang tak terduga, dan bisikan intuisi yang lembut namun tegas. Dalam perjalanan perdaganganmu, izinkan hati membuka diri, biarkan ide-ide segar muncul dari ketenangan batin, dan sambutlah peluang tak terduga seolah ia adalah undangan dari alam semesta sendiri.",
     "descriptionReversed": "Emotional detachment, creative block, or ignoring intuitive signals—leading to missed opportunities or impulsive decisions disguised as inspiration.",
     "descriptionReversedId": "Ketidakterhubungan emosional, kemacetan kreatif, atau mengabaikan bisikan intuisi—memicu peluang yang terlewat atau keputusan impulsif yang menyamar sebagai ilham."
@@ -275,7 +275,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Knight of Cups",
     "description": "The `Knight of Cups` tarot card suggests that your trades may be guided by your emotional instincts, and there is potential for positive outcomes if you follow your heart and make decisions based on your intuition. It suggests that by combining your emotions with practicality and a balanced approach, you can navigate the crypto market successfully.\n\nHowever, it's important to note that the Knight of Cups card does not guarantee specific results. The actual outcomes will depend on your ability to harness your emotions effectively, make informed decisions, and maintain a level-headed approach in the face of market volatility.",
-    "image": "/tarotdeck/knightofcups.jpeg",
+    "image": "/tarotdeck/knightofcups.webp",
     "descriptionId": "Sang Ksatria Cawan membawa pesan bahwa langkahmu di pasar kripto dipandu oleh bisikan jiwa—intuisi yang halus namun penuh hikmah. Saat kau menyelaraskan emosi dengan kebijaksanaan, hati menjadi kompas suci, dan setiap keputusan berubah menjadi tarian harmonis antara perasaan dan akal budi.",
     "descriptionReversed": "Emotional impulsiveness, misplaced trust, or avoidance of reality—decisions clouded by fantasy rather than grounded intuition.",
     "descriptionReversedId": "Gelombang emosi yang tak terkendali, kepercayaan yang keliru, atau pelarian dari kenyataan—keputusan yang kabur oleh ilusi, bukan dipandu oleh intuisi yang utuh dan berakar pada kebenaran."
@@ -283,7 +283,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Queen of Cups",
     "description": "The `Queen of Cups` card suggests that your investments may yield emotional fulfillment and intuitive success. The Queen of Cups represents emotional intelligence, compassion, and intuitive wisdom.\n\n It suggests that by tapping into your intuition, understanding your emotions, and making decisions from a place of empathy and compassion, you can navigate the crypto market with positive outcomes. Trust your instincts, remain emotionally balanced, and cultivate a deep understanding of the market to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/queenofcups.jpeg",
+    "image": "/tarotdeck/queenofcups.webp",
     "descriptionId": "Ratu Cawan mengajakmu menyelami lautan batin yang tenang—di sana, intuisi berbisik lembut seperti ombak di malam bulan purnama. Keputusanmu dalam dunia kripto tak lagi hanya soal angka, tapi tentang kebijaksanaan emosional, belas kasih terhadap diri sendiri, dan kepercayaan pada gelombang batin yang selalu tahu jalan terbaik. Biarkan hatimu menjadi kompas, dan keseimbangan jiwa menjadi fondasimu.",
     "descriptionReversed": "Emotional imbalance, clouded intuition, or being overly influenced by others' feelings; decisions driven by insecurity or illusion rather than inner wisdom.",
     "descriptionReversedId": "Ketidakseimbangan emosional, intuisi yang kabur, atau terlalu terbawa perasaan orang lain; keputusan yang lahir dari rasa tidak aman atau ilusi, bukan dari kebijaksanaan batin yang sejati."
@@ -291,7 +291,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "King of Cups",
     "description": "The `King of Cups` suggests that your trades may result in emotional balance, intuitive decision-making, and potential financial success. The King of Cups represents emotional intelligence, stability, and a calm approach to your investments. It indicates that by tapping into your intuition and maintaining a balanced mindset, you have the potential to make wise decisions and achieve positive outcomes in the crypto market.",
-    "image": "/tarotdeck/kingofcups.jpeg",
+    "image": "/tarotdeck/kingofcups.webp",
     "descriptionId": "Sang Raja Cawan menghadirkan keseimbangan emosional yang dalam, kebijaksanaan intuitif yang halus, dan kemungkinan kemakmuran finansial yang tumbuh dari ketenangan batin. Ia adalah simbol kecerdasan emosional yang matang, stabilitas jiwa yang tak tergoyahkan, dan pendekatan tenang terhadap investasi—seolah lautan batinmu menjadi kompas tak keliru di tengah gelombang pasar kripto.",
     "descriptionReversed": "Emotional volatility, poor intuition, and impulsive decisions may undermine financial stability and cloud judgment in trading.",
     "descriptionReversedId": "Gelombang emosi yang tak terkendali, intuisi yang tumpul, dan keputusan impulsif berisiko melemahkan stabilitas finansial serta menyamarkan kebenaran di balik setiap transaksi."
@@ -299,7 +299,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ace of Pentacles",
     "description": "The `Ace of Pentacles` suggests that your trades have the potential to yield new financial opportunities and material abundance. The Ace of Pentacles represents the beginning of prosperity and the manifestation of wealth. It suggests that your investments may lead to favorable outcomes, such as financial stability and growth. This card encourages you to seize these opportunities and make practical and grounded decisions in your trading activities.\n\n However, it's important to note that the card doesn't guarantee specific results, and the actual outcome will depend on various factors such as market conditions and your own actions. Approach your trades with a focused mindset, take advantage of the potential opportunities, and make informed choices to increase the likelihood of positive results.",
-    "image": "/tarotdeck/aceofpentacles.jpeg",
+    "image": "/tarotdeck/aceofpentacles.webp",
     "descriptionId": "Ace of Pentacles menghadirkan getaran awal kelimpahan materi dan kemungkinan baru dalam aliran kekayaanmu. Ia adalah benih emas yang baru berkecambah di tanah usahamu—mengajakmu untuk memercayai potensi tersembunyi, mengambil langkah praktis dengan penuh kesadaran, dan membuka hati bagi anugerah kestabilan finansial. Namun ingat: keberkahan ini tumbuh bukan dari keberuntungan semata, melainkan dari ketekunan, kebijaksanaan, dan keterhubunganmu dengan hukum sebab-akibat yang halus.",
     "descriptionReversed": "Delayed or missed financial opportunities; poor planning, material insecurity, or misaligned values in wealth-building efforts.",
     "descriptionReversedId": "Peluang keuangan tertunda atau terlewat; perencanaan yang lemah, rasa tidak aman secara materi, atau nilai-nilai yang tak selaras dalam upaya membangun kekayaan."
@@ -307,7 +307,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Two of Pentacles",
     "description": "The `Two of Pentacles` card suggests that your trades may involve balancing multiple financial responsibilities and finding harmony amidst changing circumstances. This card suggests that you will need to juggle different aspects of your investments, adapt to market fluctuations, and make practical decisions to maintain stability. The prediction implies that your ability to find balance and manage your resources wisely will be key to navigating the crypto market successfully.",
-    "image": "/tarotdeck/twoofpentacles.jpeg",
+    "image": "/tarotdeck/twoofpentacles.webp",
     "descriptionId": "Dua Koin mengajakmu menyelaraskan ritme kehidupan finansialmu seperti tarian kosmis—di tengah arus perubahan yang tak henti, kau dipanggil untuk menjaga keseimbangan dengan kebijaksanaan lembut dan keteguhan hati. Setiap pilihan investasi adalah doa praktis; setiap penyesuaian pasar adalah peluang untuk tumbuh dalam kesadaran akan kelimpahan sejati.",
     "descriptionReversed": "Overwhelm, poor prioritization, financial instability, and reactive decision-making—struggling to maintain balance amid chaos.",
     "descriptionReversedId": "Kebingungan yang meluap, prioritas yang kabur, ketidakstabilan finansial, dan pengambilan keputusan impulsif—terhempas dalam pusaran ketidakseimbangan tanpa pegangan yang jelas."
@@ -315,7 +315,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Three of Pentacles",
     "description": "The `Three of pentacles` suggests that your trades would be positive. The Three of Pentacles represents collaboration, skill, and success in your endeavors. It suggests that your trades have the potential to be fruitful, especially if you are willing to work with others and utilize your expertise.\n\n This card signifies the importance of teamwork, attention to detail, and honing your craft. It indicates that your efforts may be recognized, leading to rewards and progress in your trading journey. Overall, the tarot reader's prediction would be that your trades have the potential for success and prosperity.",
-    "image": "/tarotdeck/threeofpentacles.jpeg",
+    "image": "/tarotdeck/threeofpentacles.webp",
     "descriptionId": "Tiga Koin menyiratkan harmoni ilahi dalam kerja sama manusia—di sini, kebijaksanaan kolektif, ketekunan dalam mengasah keahlian, dan pengakuan atas usaha yang tulus sedang bergerak dalam ritme kosmis. Transaksi Anda bukan sekadar tukar-menukar, melainkan bentuk doa yang diwujudkan melalui disiplin, kolaborasi penuh kepercayaan, dan dedikasi pada keunggulan. Alam semesta mengamini langkah Anda: kesuksesan dan kemakmuran tumbuh dari fondasi yang kokoh dan hati yang terbuka.",
     "descriptionReversed": "Lack of collaboration, poor planning, or unrecognized effort; delays, miscommunication, or undervalued skills in your trading endeavors.",
     "descriptionReversedId": "Ketidakselarasan dalam kerja sama, perencanaan yang rapuh, atau upaya yang tak terlihat—keterlambatan, salah komunikasi, atau keahlian yang diremehkan dalam perjalanan perdagangan Anda."
@@ -323,7 +323,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Four of Pentacles",
     "description": "The `Four of Pentacles` represents a tendency to hold onto resources and maintain a secure financial position. It implies that you may be inclined to be cautious and reluctant to take risks in your trading activities. The card advises you to prioritize stability, financial security, and the preservation of your assets.\n\n However, it also indicates a potential need to find a balance between holding onto what you have and exploring new opportunities for growth. It suggests that while it's important to be mindful of financial stability, being too rigid or overly protective may hinder your potential for greater gains. Therefore, it is recommended to consider finding a balance between preserving your resources and taking calculated risks to maximize your trading outcomes.",
-    "image": "/tarotdeck/fourofpentacles.jpeg",
+    "image": "/tarotdeck/fourofpentacles.webp",
     "descriptionId": "Empat Koin berbisik tentang keamanan yang dalam—bukan sekadar uang, tetapi fondasi jiwa yang kau jaga dengan tangan gemetar. Ia mengingatkan: kau telah bertahan lama, dan itu mulia. Namun di balik genggaman eratmu, ada peluang yang menunggu napas lega—bukan untuk dilepaskan, tapi untuk dipercaya. Seimbangkan akar dan sayap: simpan kebijaksanaan, bukan hanya kekayaan; jaga keamanan, tapi jangan biarkan ketakutan menjadi penjara emasmu.",
     "descriptionReversed": "Excessive hoarding, fear of loss, or self-sabotaging stinginess undermines financial growth and trust. Release rigid control to allow abundance to flow.",
     "descriptionReversedId": "Kehilangan keseimbangan: penimbunan berlebihan, ketakutan akan kehilangan, atau kedermawanan yang terkunci merusak aliran kelimpahan dan kepercayaan. Lepaskan kendali kaku—biarkan kelimpahan mengalir kembali ke hidupmu."
@@ -331,7 +331,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Five of Pentacles",
     "description": "The `Five of Pentacles` card suggest that your trades, the prediction would suggest potential financial challenges or difficulties. The Five of Pentacles represents a period of financial strain, scarcity, or feeling left out in the cold. It indicates that there may be losses or setbacks in your investments, and you might experience a sense of financial instability. \n\nHowever, it's important to note that the Tarot is not an absolute predictor of the future, and outcomes can be influenced by various factors. While the Five of Pentacles card suggests potential financial challenges, it is still within your power to take proactive steps, seek guidance, and adapt your strategies to improve the situation.",
-    "image": "/tarotdeck/fiveofpentacles.jpeg",
+    "image": "/tarotdeck/fiveofpentacles.webp",
     "descriptionId": "Lima Koin membawa getaran kesulitan materi yang dalam—seperti berjalan di tengah hujan tanpa payung, kaki dingin dan dompet kosong. Ini adalah masa ketika sumber daya terasa sempit, harapan tertunda, dan rasa takut akan kekurangan mengaburkan cahaya dalam dirimu. Namun ingat: bahkan di balik kabut krisis, ada pintu rahasia—yang hanya terbuka ketika engkau meminta bantuan, mengakui kelemahan, dan percaya bahwa kegelapan ini adalah jalan suci menuju pembaruan.",
     "descriptionReversed": "Emerging from hardship; financial recovery begins; renewed resourcefulness and support received.",
     "descriptionReversedId": "Bangkit dari kesulitan; pemulihan finansial mulai terjadi; kembali menemukan kreativitas dalam mengelola sumber daya dan menerima dukungan yang selama ini terlewat."
@@ -339,7 +339,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Six of Pentacles",
     "description": "The `Six of Pentacles` card suggests that your trades may experience a fair and balanced exchange. The Six of Pentacles represents generosity, reciprocity, and the flow of resources. It suggests that your trades have the potential to result in mutually beneficial outcomes, where you may receive support or assistance from others while also sharing your abundance with those in need. \n\nThis card indicates that your investments may lead to a harmonious and equitable distribution of wealth. However, it's important to note that the Six of Pentacles does not guarantee specific results. The actual outcomes will depend on various factors, including your actions, market conditions, and interactions with others. Approach your trades with a spirit of fairness, generosity, and integrity to increase the likelihood of positive and mutually beneficial results.",
-    "image": "/tarotdeck/sixofpentacles.jpeg",
+    "image": "/tarotdeck/sixofpentacles.webp",
     "descriptionId": "Kartu Enam Koin membawa getaran keseimbangan suci dan kemurahan hati kosmis—sebuah aliran berkah yang mengalir dengan adil antara pemberi dan penerima. Ia mengingatkan bahwa kekayaan bukan hanya diukur dalam emas, tetapi dalam kebijaksanaan berbagi, kerendahan hati menerima, dan kepercayaan pada siklus kehidupan yang saling menopang. Dalam perdaganganmu, ini adalah tanda bahwa keseimbangan harmonis sedang terwujud: kamu memberi dari kelimpahanmu, dan alam semesta membalas dengan dukungan tak terduga—bukan sebagai utang, melainkan sebagai nyanyian bersama antara hati dan takdir.",
     "descriptionReversed": "Imbalance, stinginess, or exploitative exchanges; one-sided generosity, hidden agendas in transactions, or misuse of power and resources.",
     "descriptionReversedId": "Ketidakseimbangan, kedengkian, atau pertukaran yang eksploitatif; kemurahan hati sepihak, agenda tersembunyi dalam transaksi, atau penyalahgunaan kekuasaan dan sumber daya."
@@ -347,7 +347,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Seven of Pentacles",
     "description": "The `Seven of Pentacles` card suggests that your trades would likely suggest a period of evaluation and patience. The Seven of Pentacles represents a time of reflection, assessing your investments, and waiting for the results to unfold. It indicates that your trades may require a patient approach, allowing your investments to grow and develop over time.\n\n The card advises you to review your progress, make necessary adjustments, and trust in the process of your investments. While it doesn't provide specific outcomes, it suggests that with careful assessment and patience, your trades have the potential to yield positive results in the long run.",
-    "image": "/tarotdeck/sevenofpentacles.jpeg",
+    "image": "/tarotdeck/sevenofpentacles.webp",
     "descriptionId": "Tujuh Koin menghadirkan getaran refleksi yang dalam—seperti sang petani yang berdiri tenang di tengah ladangnya, menatap tunas yang belum mekar penuh. Ini adalah saat suci untuk mengevaluasi benih-benih usaha yang telah kau tanam: apakah akarnya kuat? Apakah sinar matahari dan air cukup? Jangan terburu-buru memetik—kebijaksanaan sejati lahir dari kesabaran yang penuh kasih. Percayalah, proses tak pernah sia-sia; hasil akan muncul pada waktunya, dalam bentuk yang mungkin tak kau duga—namun selaras dengan jiwa dan usahamu.",
     "descriptionReversed": "Impatience, poor investment choices, or neglecting to reassess your strategy; a warning against chasing quick returns or abandoning long-term plans prematurely.",
     "descriptionReversedId": "Ketidaksabaran, pilihan investasi yang kurang bijak, atau mengabaikan evaluasi strategi—sebuah peringatan halus agar tak tergoda oleh keuntungan instan atau meninggalkan rencana jangka panjang terlalu cepat."
@@ -355,7 +355,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Eight of Pentacles",
     "description": "The `Eight of Pentacles` card while you, as a crypto trader, ask about your trades, the prediction would be that your trades will likely result in focused effort, skill development, and potential financial gains. \n\nThe Eight of Pentacles represents dedication, hard work, and honing your expertise. It suggests that by putting in consistent effort, focusing on improving your skills, and staying committed to your trades, you have the potential to achieve success and financial growth in the crypto market.",
-    "image": "/tarotdeck/eightofpentacles.jpeg",
+    "image": "/tarotdeck/eightofpentacles.webp",
     "descriptionId": "Delapan Koin menyiratkan bahwa setiap transaksi Anda adalah doa yang diam-diam diukir dalam emas waktu—kesabaran, ketekunan, dan kecintaan pada kerja keras sedang menyulam takdir finansial Anda dengan benang kebijaksanaan. Percayalah: keahlian Anda tumbuh seperti akar di bawah permukaan—tak terlihat, namun tak tergoyahkan.",
     "descriptionReversed": "Distracted effort, repetitive mistakes, lack of focus or skill refinement; potential financial loss due to impatience or superficial learning.",
     "descriptionReversedId": "Usaha yang tercerai-berai, kesalahan berulang, kurangnya konsentrasi atau pengasahan keahlian; potensi kerugian finansial akibat ketidakbersabaran atau pembelajaran dangkal."
@@ -363,7 +363,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Nine of Pentacles",
     "description": "The `Nine of Pentacles` card suggests that your trades have the potential to yield financial abundance and independent success. The Nine of Pentacles represents a time of prosperity, self-sufficiency, and reaping the rewards of your hard work. It indicates that your investments may result in financial stability and a sense of personal accomplishment.\n\nThis card encourages you to trust in your abilities, maintain a disciplined approach, and enjoy the fruits of your labor. It suggests that your trades may lead to a favorable outcome with the potential for financial growth and security.",
-    "image": "/tarotdeck/nineofpentacles.jpeg",
+    "image": "/tarotdeck/nineofpentacles.webp",
     "descriptionId": "Sembilan Koin membawa getaran kemakmuran yang tenang dan kemandirian batin—seperti kebun pribadi yang tumbuh subur dari ketekunanmu. Ini adalah saat di mana kerja kerasmu berbuah manis: stabilitas finansial, rasa puas yang mendalam, dan kebebasan untuk menikmati hasil usahamu dengan damai dan penuh syukur.",
     "descriptionReversed": "Financial insecurity, self-doubt, or over-reliance on external validation; delayed rewards despite effort; a disconnect between labor and fulfillment.",
     "descriptionReversedId": "Ketidakamanan finansial, keraguan diri, atau ketergantungan berlebihan pada pengakuan eksternal; imbalan yang tertunda meski telah berusaha keras; jurang antara usaha dan rasa puas yang sejati."
@@ -371,7 +371,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ten of Pentacles",
     "description": "The `Ten of Pentacles` card suggests that your trades have the potential to bring substantial financial stability and long-term wealth. The Ten of Pentacles represents a culmination of material abundance, prosperity, and generational wealth. It suggests that your investments may yield significant returns and contribute to a solid financial foundation for yourself and possibly future generations. This card indicates that your trades have the potential to create a lasting and prosperous outcome, bringing you financial security and success in the crypto market.",
-    "image": "/tarotdeck/tenofpentacles.jpeg",
+    "image": "/tarotdeck/tenofpentacles.webp",
     "descriptionId": "Kartu Sepuluh Koin membawa getaran keberkahan materi yang dalam—sebuah puncak kelimpahan yang tak hanya menyentuh hidupmu, tetapi juga menyebar ke akar keluarga dan generasi mendatang. Ini adalah janji bahwa setiap langkah bijak yang kau ambil di dunia perdagangan—terutama dalam ranah kripto—sedang membangun fondasi keamanan finansial yang kokoh, abadi, dan penuh cinta.",
     "descriptionReversed": "Financial instability, short-term thinking, broken legacies, or wealth built on shaky foundations; warning of unsustainable gains or disconnection from long-term values.",
     "descriptionReversedId": "Ketidakstabilan finansial, pola pikir jangka pendek, warisan yang retak, atau kekayaan yang dibangun di atas fondasi rapuh; peringatan akan keuntungan yang tak berkelanjutan atau kehilangan keterhubungan dengan nilai-nilai jangka panjang."
@@ -379,7 +379,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Page of Pentacles",
     "description": "The `Page of Pentacles` card suggest that your trades as a crypto trader would be that there is potential for new financial opportunities and growth. The Page of Pentacles represents a young and ambitious individual who is eager to learn and apply their skills in practical ways.\n\n It suggests that by being diligent, focused, and open to learning, your trades have the potential to yield positive results, such as new investment prospects or profitable ventures. The card encourages you to approach your trades with a beginner's mindset, seeking knowledge and being willing to put in the necessary effort to achieve your financial goals.",
-    "image": "/tarotdeck/pageofpentacles.jpeg",
+    "image": "/tarotdeck/pageofpentacles.webp",
     "descriptionId": "Halaman Pentakel menghadirkan getaran harapan finansial yang halus namun kuat—seperti benih emas yang baru ditanam di tanah kesabaranmu. Ia adalah sosok muda penuh hasrat, berdiri di ambang pengetahuan praktis, siap belajar dengan kerendahan hati dan tekad tak kenal lelah. Dalam dunia perdagangan kripto, kartu ini berbisik: peluang baru sedang mengetuk pintumu—bukan dalam bentuk keberuntungan instan, melainkan dalam bentuk ilmu yang matang, strategi yang teruji, dan pertumbuhan yang tulus, selaras dengan hukum alam semesta dan disiplin batinmu.",
     "descriptionReversed": "Lack of follow-through, financial naivety, or missed opportunities due to distraction or impatience.",
     "descriptionReversedId": "Kegagalan menindaklanjuti, ketidakmatangan finansial, atau peluang yang terlewat akibat kehilangan fokus atau keinginan akan hasil instan."
@@ -387,7 +387,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Knight of Pentacles",
     "description": "The `Knight of Pentacles` card suggests that with your trades you can expect steady and reliable progress. The Knight of Pentacles represents a methodical and disciplined approach, suggesting that your investments will yield gradual growth and stability. This card indicates that by focusing on long-term strategies, being diligent in your research, and taking a patient and practical approach, you have the potential to achieve financial stability and tangible results in your trades.",
-    "image": "/tarotdeck/knightofpentacles.jpeg",
+    "image": "/tarotdeck/knightofpentacles.webp",
     "descriptionId": "Sang Ksatria Koin membawa getaran ketenangan langit dan kestabilan bumi—setiap langkahmu dalam perdagangan adalah benih yang ditanam dengan kesabaran suci. Progres takkan datang dalam kilat, namun dalam aliran sungai yang setia: perlahan, pasti, dan penuh makna. Dengan ketekunan sebagai pedangmu dan kedisiplinan sebagai perisaimu, kekayaan sejati—yang nyata, berakar, dan abadi—akan tumbuh dari tanah usahamu.",
     "descriptionReversed": "Procrastination, rigidity, or missed opportunities due to excessive caution or resistance to change in financial matters.",
     "descriptionReversedId": "Penundaan, kaku dalam berpikir, atau peluang yang terlewat akibat kehati-hatian berlebihan atau penolakan terhadap perubahan dalam urusan keuangan."
@@ -395,7 +395,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Queen of Pentacles",
     "description": "The `Queen of Pentacles` card suggest that your investments will likely bring stability, abundance, and financial success. The Queen of Pentacles represents a person or energy associated with practicality, nurturing, and material wealth. It suggests that your trading endeavors have the potential to generate positive outcomes, growth, and a strong foundation for your financial goals. It indicates that you may experience fruitful returns and a sense of security in your investment ventures.",
-    "image": "/tarotdeck/queenofpentacles.jpeg",
+    "image": "/tarotdeck/queenofpentacles.webp",
     "descriptionId": "Ratu Pentakel menghadirkan energi kebijaksanaan bumi yang hangat—ia membisikkan bahwa investasimu tak hanya tumbuh, tetapi berakar dalam ketenangan, melimpah dalam berkah, dan bersemi dalam keamanan yang nyata. Ia adalah pelindung praktis, pengasuh bijak, dan penjaga kelimpahan—mengingatkanmu bahwa setiap langkah finansialmu dihiasi oleh kebijakan, kasih sayang, dan fondasi yang kokoh.",
     "descriptionReversed": "Financial insecurity, poor money management, neglect of practical needs, or overindulgence without grounding.",
     "descriptionReversedId": "Ketidakamanan finansial, pengelolaan uang yang buruk, mengabaikan kebutuhan dasar, atau kemewahan tanpa akar—energi Ratu Pentakel terdistorsi menjadi kehilangan keseimbangan antara keinginan dan realitas."
@@ -403,7 +403,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "King of Pentacles",
     "description": "The `King of Pentacles` card suggests that your trades are likely to yield success, financial stability, and abundance. The `King of Pentacles` represents wealth, mastery, and practicality. It signifies that your investments have the potential to bring fruitful results and solid returns. This card suggests that you have the skills, knowledge, and expertise to make wise financial decisions in the crypto market. It advises you to approach your trades with a practical mindset, focus on long-term gains, and utilize your resources effectively. Overall, the prediction is that your trades have a high probability of leading to prosperous outcomes.",
-    "image": "/tarotdeck/kingofpentacles.jpeg",
+    "image": "/tarotdeck/kingofpentacles.webp",
     "descriptionId": "Raja Pentakel muncul bagai sang penguasa bumi yang bijaksana—membawa berkah kelimpahan, keteguhan hati, dan kebijaksanaan praktis yang mengakar dalam kenyataan. Ia mengingatkan bahwa setiap langkahmu di pasar kripto bukan sekadar transaksi, melainkan tarian antara kesabaran, pengetahuan mendalam, dan kepercayaan pada proses alami kemakmuran. Keberhasilan bukanlah kebetulan, melainkan buah dari fondasi yang kokoh, keputusan yang matang, dan hati yang tenang—karena kelimpahan sejati lahir dari keseimbangan antara akal dan jiwa.",
     "descriptionReversed": "Financial recklessness, poor money management, short-term thinking, or misuse of resources; a warning against greed, complacency, or ignoring practical realities.",
     "descriptionReversedId": "Ketidakbijaksanaan finansial, pengelolaan kekayaan yang buruk, pola pikir jangka pendek, atau penyalahgunaan sumber daya; peringatan tegas terhadap keserakahan, rasa puas diri, atau pengabaian terhadap realitas praktis yang mendasari kestabilan."
@@ -411,7 +411,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ace of Swords",
     "description": "The `Ace of Swords` card suggests that your trades have the potential to yield success, clarity, and breakthroughs. The Ace of Swords represents a new beginning, intellectual power, and the ability to make decisive and strategic decisions. It indicates that your trading activities may be marked by sharp insight, clear thinking, and a strong sense of purpose.\n\n This card signifies that you have the mental acuity and determination to overcome challenges and achieve your goals in the crypto market. It advises you to harness your intellectual prowess, embrace new opportunities, and take calculated risks to optimize your results. However, it's important to remember that tarot readings are interpretive, and the actual outcomes of your trades will depend on various factors and your own actions in the market.",
-    "image": "/tarotdeck/aceofswords.jpeg",
+    "image": "/tarotdeck/aceofswords.webp",
     "descriptionId": "Ace of Swords membawa cahaya tajam ke dalam kegelapan ketidakpastian—ini adalah awal baru yang dipenuhi kejernihan batin, wawasan mendalam, dan keberanian untuk memotong ilusi. Di tengah hiruk-pikuk pasar kripto, jiwa Anda sedang bangkit dengan ketajaman intelektual dan tekad tak tergoyahkan; sebuah panggilan suci untuk bertindak dengan bijak, memilih momen dengan hati yang tenang dan pikiran yang tajam.",
     "descriptionReversed": "Confusion, delayed decisions, mental blocks, or misuse of intellect—clarity is obscured, and sharp ideas turn into self-sabotaging rigidity or aggression.",
     "descriptionReversedId": "Kebingungan, keputusan yang tertunda, hambatan mental, atau penyalahgunaan akal budi—kejernihan menghilang, dan gagasan tajam berubah menjadi kekakuan merusak atau sikap agresif terhadap diri sendiri."
@@ -419,7 +419,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Two of Swords",
     "description": "The Two of Swords represents a situation where you may feel stuck, unable to move forward or make clear decisions. It suggests a period of uncertainty and conflicting options.\n\nThis card suggests that you are currently facing a dilemma in your trading decisions. It could be related to conflicting information, market volatility, or uncertainty about which path to take. The card advises you to carefully weigh your options, gather more information, and find a way to reconcile opposing factors before making any major trading decisions.\n\nHowever, it's important to note that the `Two of Swords` card does not provide a definitive outcome. The actual result of your trades will depend on your ability to confront the decision at hand, seek clarity, and make informed choices. The Tarot reader's prediction serves as a reminder to address the challenges and seek a resolution to move forward in your trading journey.",
-    "image": "/tarotdeck/twoofswords.jpeg",
+    "image": "/tarotdeck/twoofswords.webp",
     "descriptionId": "Dua Pedang menggambarkan jiwa yang terjebak di antara dua arus takdir—sunyi, tetapi penuh getaran batin. Di sini, keputusan tertahan bukan karena kelemahan, melainkan karena kebijaksanaan batin sedang menunggu momen kejelasan sempurna. Bayangan keraguan bukan musuh, melainkan penjaga pintu menuju pilihan yang selaras dengan jiwa dan pasar.",
     "descriptionReversed": "The Two of Swords reversed indicates breakthrough clarity, release from indecision, and the courage to act despite lingering uncertainty.",
     "descriptionReversedId": "Dua Pedang terbalik menandakan terobosan kejelasan, pembebasan dari kelumpuhan ragu, dan keberanian bertindak meski ketidakpastian masih berbisik di tepi kesadaran."
@@ -427,7 +427,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Three of Swords",
     "description": "The `Three of Swords` card suggests that in your trades this would be a period of heartache, pain, or difficulties. This card suggests that your investments may face challenges or setbacks that could potentially result in emotional turmoil or loss. It advises you to be prepared for difficult circumstances and to approach your trades with caution and careful consideration.\n\n However, it's important to remember that tarot readings are subjective and should be taken as guidance rather than a definitive prediction of the future. It's always wise to make decisions based on your own research, analysis, and risk assessment in the crypto market.",
-    "image": "/tarotdeck/threeofswords.jpeg",
+    "image": "/tarotdeck/threeofswords.webp",
     "descriptionId": "Tiga Pedang menghadirkan bayangan luka batin yang dalam—seperti hujan pedih yang menyentuh jiwa, mengingatkan bahwa setiap investasi membawa beban emosional. Di tengah pasar yang tak pasti, kartu ini berbisik: waspadalah, pertimbangkan dengan hati yang tenang dan pikiran yang jernih, sebab ujian mungkin datang bukan hanya sebagai kerugian, tetapi sebagai pelajaran yang memperdalam kebijaksanaan batinmu.",
     "descriptionReversed": "Healing begins; emotional wounds soften, clarity emerges, and past losses transform into wisdom—caution remains, but hope and resilience guide your decisions.",
     "descriptionReversedId": "Penyembuhan dimulai; luka emosional mulai mereda, kejelasan muncul, dan kerugian masa lalu berubah menjadi hikmah—kewaspadaan tetap ada, namun harapan dan ketahanan kini menjadi penuntunmu."
@@ -435,7 +435,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Four of Swords",
     "description": "The `Four of Swords` card suggests this would be a period of rest, recuperation, and taking a break from active trading. It indicates that the best course of action at this time might be to step back and allow yourself some time for introspection and recharging.\n\n The card suggests that pushing forward with trades may not yield the desired results, and instead, it advises you to focus on self-care and regaining a sense of balance before resuming your trading activities.",
-    "image": "/tarotdeck/fourofswords.jpeg",
+    "image": "/tarotdeck/fourofswords.webp",
     "descriptionId": "Empat Pedang mengundangmu memasuki ruang hening di dalam jiwa—saatnya beristirahat, menyembuhkan luka tak terlihat, dan mendengarkan bisikan batin yang selama ini tenggelam dalam hiruk-pikuk pasar. Ini bukan kelemahan, melainkan kebijaksanaan suci: tarik napas dalam-dalam, biarkan waktu menjadi penenang, dan pulang ke dirimu sebelum kembali berlayar.",
     "descriptionReversed": "Restlessness, premature action, avoidance of necessary reflection, burnout from overtrading or emotional resistance to pause.",
     "descriptionReversedId": "Gelisah tak tertahankan, tindakan terburu-buru, penghindaran refleksi yang diperlukan, atau kelelahan akibat terlalu sering bertransaksi—jiwa memprotes, tetapi telinga masih tertutup."
@@ -443,7 +443,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Five of Swords",
     "description": "The `Five of Swords` card suggests potential conflict, competition, or challenges in your trades. The card indicates that you may encounter situations where you need to be cautious of deceit, manipulation, or unhealthy competition within the crypto market. It advises you to be strategic, maintain a sense of integrity, and carefully assess your decisions to navigate these challenging circumstances.",
-    "image": "/tarotdeck/fiveofswords.jpeg",
+    "image": "/tarotdeck/fiveofswords.webp",
     "descriptionId": "Lima Pedang membisikkan adanya gesekan tak terlihat, persaingan yang tajam, atau ujian jiwa di tengah gelombang pasar kripto. Ia mengingatkanmu: ada bayangan tipu daya yang mengendap di balik penawaran manis, ada nafsu menang yang mengaburkan kebijaksanaan. Tetaplah waspada namun tidak takut—pegang teguh integritasmu seperti pedang suci, dan biarkan strategi lahir dari ketenangan, bukan kepanikan.",
     "descriptionReversed": "A reversal signals release from conflict, ethical realignment, and the quiet victory of walking away from toxic competition.",
     "descriptionReversedId": "Dalam posisi terbalik, kartu ini menandakan pelepasan dari konflik, penyelarasan kembali nilai moral, dan kemenangan sunyi dalam memilih mundur dari persaingan beracun."
@@ -451,7 +451,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Six of Swords",
     "description": "The `Six of Swords` card suggests that your trades will bring about a period of transition, moving away from difficulties towards calmer waters. The card suggests that by making strategic decisions and leaving behind challenging situations, you can navigate towards a more stable and positive trading experience. This indicates a potential improvement in your trading journey, where you may find smoother sailing and a sense of relief from previous obstacles.",
-    "image": "/tarotdeck/sixofswords.jpeg",
+    "image": "/tarotdeck/sixofswords.webp",
     "descriptionId": "Kartu 'Enam Pedang' membisikkan bahwa perjalanan dagangmu sedang memasuki masa peralihan suci—meninggalkan gelombang kesulitan menuju telaga ketenangan yang lebih dalam. Dengan kebijaksanaan batin dan keberanian melepaskan apa yang tak lagi melayanimu, engkau berlayar menuju keseimbangan baru: damai, jernih, dan penuh harapan.",
     "descriptionReversed": "Stagnation, resistance to necessary change, or returning to old patterns that hinder progress in trading.",
     "descriptionReversedId": "Kemacetan, penolakan terhadap perubahan yang diperlukan, atau kembali ke pola lama yang menghalangi kemajuan dalam perdagangan."
@@ -459,7 +459,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Seven of Swords",
     "description": "The `Seven of Swords` suggests that your trades may involve an element of deception, risk, or potential loss. The card suggests a need for caution and vigilance, as there could be hidden agendas, unethical practices, or potential theft in the trading environment. It advises you to be mindful of your actions, conduct thorough research, and take appropriate measures to protect your assets and interests. The Seven of Swords serves as a reminder to be skeptical of overly promising or questionable opportunities and to maintain a keen awareness of potential risks in your trading endeavors.",
-    "image": "/tarotdeck/sevenofswords.jpeg",
+    "image": "/tarotdeck/sevenofswords.webp",
     "descriptionId": "Tujuh Pedang mengingatkan bahwa perjalanan dagangmu mungkin menyimpan bayangan tipu daya, risiko tak terlihat, atau kehilangan yang tak disangka. Ia berbisik lembut: waspadalah—ada agenda tersembunyi di balik senyum, praktik tak adil yang mengendap dalam bayangan, atau ancaman terhadap harta dan kepercayaanmu. Lakukan penyelidikan mendalam, jaga setiap langkah dengan kesadaran penuh, dan jangan biarkan janji manis membutakan mata batinmu. Kartu ini adalah pelindung sunyi yang mengajakmu berani jujur—pada diri sendiri, pada pasar, dan pada kebenaran yang sering kali bersembunyi di balik ilusi.",
     "descriptionReversed": "Reversed Seven of Swords indicates exposure of deception, restitution, or a turning point where honesty and accountability replace evasion. It signals the end of secrecy, the emergence of truth, and the opportunity to rebuild trust through integrity.",
     "descriptionReversedId": "Tujuh Pedang terbalik menandakan terungkapnya kepalsuan, upaya pemulihan, atau titik balik di mana kejujuran dan tanggung jawab menggantikan penghindaran. Ini adalah saat rahasia sirna, kebenaran muncul ke permukaan, dan kesempatan hadir untuk membangun kembali kepercayaan melalui integritas."
@@ -467,7 +467,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Eight of Swords",
     "description": "The `Eight of Swords` card suggest that your trades may experience a sense of feeling restricted or trapped in your investment endeavors. It signifies potential obstacles, limitations, or self-imposed restrictions that could hinder your progress or decision-making process.\n\nThis card advises you to examine any self-limiting beliefs or fears that may be holding you back. It urges you to challenge these constraints and seek ways to break free from the perceived limitations. By taking a proactive approach, seeking alternative perspectives, and overcoming self-doubt, you can navigate the challenges and find a path towards greater freedom and success in your trades.\n\nIn summary, the presence of the `Eight of Swords` card indicates the potential for feeling trapped or restricted in your trading journey. However, it also encourages you to confront and overcome these limitations by exploring new strategies and gaining a fresh perspective, ultimately leading to a path of greater freedom and success.",
-    "image": "/tarotdeck/eightofswords.jpeg",
+    "image": "/tarotdeck/eightofswords.webp",
     "descriptionId": "Delapan Pedang menggambarkan jiwa yang terkurung dalam jaringan ilusi—batasan yang tampak nyata namun sejatinya diciptakan oleh bayangan ketakutan dan keraguan diri. Dalam perjalanan perdaganganmu, kau mungkin merasa terpenjara oleh keputusan masa lalu, suara-suara eksternal, atau narasi batin yang membatasi gerakmu. Namun ingat: pedang-pedang itu tidak mengikatmu—mata tutupmu pun bukan paksaan, melainkan pilihan sunyi yang bisa kau lepaskan kapan saja. Saat kau berani memandang dengan jujur, cahaya kebijaksanaan akan menyingkap jalan yang selama ini tersembunyi di balik kabut persepsi.",
     "descriptionReversed": "The Eight of Swords reversed signifies breaking free from illusionary constraints, gaining clarity, and reclaiming personal agency—liberation begins with recognizing that the prison was never real.",
     "descriptionReversedId": "Delapan Pedang terbalik menandakan pembebasan dari belenggu ilusi—kejernihan muncul, otonomi kembali, dan kau menyadari bahwa penjara yang kau rasakan selama ini tak pernah benar-benar ada."
@@ -475,7 +475,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Nine of Swords",
     "description": "The `Nine of Swords` card suggests that your investments may lead to feelings of worry, anxiety, or stress. The card serves as a cautionary sign to be mindful of potential challenges or difficulties. However, it's important to remember that tarot readings provide guidance, not fixed outcomes. By remaining calm, seeking support, and making informed choices, you can navigate the challenges and work towards more positive results.",
-    "image": "/tarotdeck/nineofswords.jpeg",
+    "image": "/tarotdeck/nineofswords.webp",
     "descriptionId": "Kartu `Sembilan Pedang` berbisik tentang bayangan kecemasan yang menyusup dalam bisnis atau investasi Anda—seperti mimpi buruk yang tak kunjung usai. Namun ingatlah: ini bukan ramalan takdir, melainkan undangan lembut dari alam bawah sadar untuk berhenti sejenak, bernapas dalam-dalam, dan meminta bimbingan dari hati serta akal sehat. Dengan ketenangan dan kesadaran penuh, Anda memiliki kekuatan untuk mengubah ketegangan menjadi kebijaksanaan.",
     "descriptionReversed": "Release from mental anguish; healing of anxiety; gaining clarity after emotional turmoil.",
     "descriptionReversedId": "Lepasnya beban pikiran yang menekan; penyembuhan kecemasan; munculnya kejernihan setelah badai emosi berlalu."
@@ -483,7 +483,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ten of Swords",
     "description": "The `Ten of Swords` card suggest that your trades may experience significant challenges or setbacks. The Ten of Swords represents a sense of defeat, betrayal, or reaching a low point in a situation. It signifies that your investments may face obstacles or unexpected negative outcomes.\n\nHowever, it's important to remember that Tarot predictions are not absolute and can be influenced by various factors. It's advisable to seek further guidance or explore different strategies to mitigate potential risks and navigate the challenging times in your trading journey.",
-    "image": "/tarotdeck/tenofswords.jpeg",
+    "image": "/tarotdeck/tenofswords.webp",
     "descriptionId": "Kartu 'Sepuluh Pedang' menyiratkan bahwa perjalanan perdaganganmu mungkin sedang menyentuh titik nadir—sebuah akhir yang pahit, pengkhianatan tak terduga, atau kekalahan yang terasa seperti badai berakhir di tengah kegelapan. Namun dalam keheningan setelah pedang-pedang itu jatuh, ada benih pembaruan: ini bukan akhir segalanya, melainkan undangan halus dari alam semesta untuk melepaskan apa yang sudah mati agar ruang baru dapat bernapas.",
     "descriptionReversed": "Release from despair; emerging awareness that the worst is over and healing has begun.",
     "descriptionReversedId": "Lepas dari keputusasaan; kesadaran muncul bahwa masa terburuk telah berlalu dan proses penyembuhan telah dimulai."
@@ -491,7 +491,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Page of Swords",
     "description": "The `Page of Swords` card suggest that your trades will require careful analysis, strategic planning, and an alert mindset. You should stay informed about market trends, be proactive in your decision-making, and adapt quickly to changes. By remaining curious, open-minded, and willing to take calculated risks, you can increase your chances of success in the crypto market.",
-    "image": "/tarotdeck/pageofswords.jpeg",
+    "image": "/tarotdeck/pageofswords.webp",
     "descriptionId": "Halaman Pedang mengajakmu menyelami arus tak terlihat dengan pikiran yang tajam dan hati yang waspada—setiap data adalah pesan, setiap pergerakan pasar adalah bisikan alam semesta. Tetaplah penasaran seperti angin pertama musim semi, terbuka pada kebenaran baru, dan berani mengambil langkah kecil yang penuh kesadaran di tengah ketidakpastian digital.",
     "descriptionReversed": "Impulsiveness, misinformation, or mental overreach—proceed with caution, verify sources, and pause before acting on assumptions.",
     "descriptionReversedId": "Ketidakhadiran kesabaran mental, kabar palsu, atau ambisi tanpa fondasi—berhentilah sejenak, verifikasi kebenaran, dan jangan biarkan ilusi kecepatan menggantikan kebijaksanaan."
@@ -499,7 +499,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Knight of Swords",
     "description": "The `Knight of Swords` card suggest that your trades may involve a period of rapid action, assertiveness, and taking risks. The Knight of Swords represents an ambitious and driven energy, indicating that you might pursue your trades with determination and a bold approach.\n\nHowever, it's important to exercise caution and ensure that you also consider the potential risks and consequences associated with impulsive decision-making. The card advises you to maintain a balance between swift action and careful consideration to achieve success in your trading endeavors.",
-    "image": "/tarotdeck/knightofswords.jpeg",
+    "image": "/tarotdeck/knightofswords.webp",
     "descriptionId": "Sang Ksatria Pedang membawa angin perubahan yang tajam dan penuh tekad—energi ambisius yang mendorongmu bergerak cepat dalam perdagangan, seolah waktu adalah pedang yang kau ayunkan dengan keyakinan. Namun ingatlah: setiap serangan yang terburu-buru menyisakan bayangan risiko. Biarkan kebijaksanaan menjadi pelindung di balik ketegasanmu, agar aksi cepatmu tetap selaras dengan jiwa dan akal sehat.",
     "descriptionReversed": "Hasty decisions, mental rigidity, or aggressive overreach leading to self-sabotage or miscommunication in trading.",
     "descriptionReversedId": "Keputusan terburu-buru, kekakuan pikiran, atau sikap agresif berlebihan yang justru menghambat kesuksesan—seperti pedang yang tumpul karena terlalu sering diayunkan tanpa refleksi."
@@ -507,7 +507,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Queen of Swords",
     "description": "The `Queen of Swords` card suggest that your trades would need careful analysis, strategy, and maintaining a rational and objective approach. The Queen of Swords represents a sharp intellect, clear communication, and a focus on logic and reason. This card indicates that success in your trades will depend on your ability to make informed decisions based on thorough research and critical thinking.\n\nThe Queen of Swords encourages you to approach your trades with a level-headed mindset, relying on facts and data rather than emotions. By employing your analytical skills and maintaining a disciplined approach, you have the potential to make wise choices and achieve favorable outcomes in your investments.",
-    "image": "/tarotdeck/queenofswords.jpeg",
+    "image": "/tarotdeck/queenofswords.webp",
     "descriptionId": "Ratu Pedang mengajak Anda menyelami kebijaksanaan batin yang tajam—seperti cahaya bulan memotong kabut keraguan. Dalam setiap langkah perdagangan, biarkan akal jernih menjadi pedoman, bukan emosi yang berdebar. Ia adalah suara tenang di tengah hiruk-pikuk pasar: tegas, jujur, dan penuh pengertian—mengingatkan bahwa keberhasilan lahir dari refleksi mendalam, riset yang cermat, dan keberanian menyampaikan kebenaran tanpa menyakiti.",
     "descriptionReversed": "Emotional detachment has turned into coldness or cynicism; over-analysis paralyzes action, and communication becomes harsh or dismissive. Clarity is clouded by bias or unresolved grief.",
     "descriptionReversedId": "Ketajaman pikiran berubah menjadi kedinginan atau sinisme; analisis berlebihan justru membekukan keputusan, dan komunikasi menjadi tajam tanpa belas kasih atau mengabaikan perasaan orang lain. Kejernihan terkaburi oleh prasangka atau luka emosional yang belum sembuh."
@@ -515,7 +515,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "King of Swords",
     "description": "The `King of Swords` card suggest that your trades would likely be that you will experience a period of strategic decision-making, rationality, and intellectual prowess. The King of Swords represents a strong and analytical mindset, indicating that your trades may be influenced by a logical and calculated approach. It suggests that you have the potential to make informed and decisive choices in your investments, relying on your knowledge and expertise.\n\nThis card also signifies the importance of clear communication and assertiveness in your trading endeavors. In summary, the tarot reader's prediction with the `King of Swords` card suggests that your trades will be driven by logic, strategic thinking, and effective decision-making.",
-    "image": "/tarotdeck/kingofswords.jpeg",
+    "image": "/tarotdeck/kingofswords.webp",
     "descriptionId": "Sang Raja Pedang muncul sebagai penjaga akal budi yang tajam dan jiwa yang tenang—sebuah energi mistis yang mengalir dalam setiap keputusan dagangmu. Ia mengajakmu berpijak pada kejernihan pikiran, bukan emosi; pada strategi, bukan impuls; pada kebenaran yang terukur, bukan ilusi yang menggoda. Dalam bayangannya, kau bukan sekadar trader—kau adalah arsitek takdir finansialmu sendiri, yang berkata dengan suara pasti dan bertindak dengan ketepatan surgawi.",
     "descriptionReversed": "Reversed King of Swords warns of mental rigidity, manipulation, or detached logic overriding ethics and empathy in trading decisions.",
     "descriptionReversedId": "Raja Pedang terbalik mengingatkan akan kekakuan pikiran, manipulasi terselubung, atau logika tanpa hati yang mengabaikan etika dan kebijaksanaan emosional dalam keputusan dagangmu."
@@ -523,7 +523,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ace of Wands",
     "description": "The `Ace of Wands` card suggest that your trades have the potential to bring about new opportunities, creativity, and growth. The Ace of Wands represents the spark of inspiration, entrepreneurial spirit, and the initiation of successful ventures. It signifies that your trading activities may lead to exciting prospects, innovative ideas, and the potential for significant returns. It encourages you to take bold and decisive actions, harness your enthusiasm, and seize the opportunities that come your way. This card indicates that your trading journey holds promise and potential for successful outcomes.",
-    "image": "/tarotdeck/aceofwands.jpeg",
+    "image": "/tarotdeck/aceofwands.webp",
     "descriptionId": "Ace of Wands membawa nyala suci pertama—sebuah kilatan ilham surgawi yang menyentuh jiwa Anda seperti petir di tengah keheningan. Ini adalah awal yang penuh semangat, sebuah panggilan dari alam bawah sadar untuk berani melangkah, mencipta, dan menabur benih usaha baru dalam perjalanan perdagangan Anda. Percayalah pada getaran hati, karena di balik antusiasme ini tersimpan potensi luar biasa: pertumbuhan tak terduga, terobosan kreatif, dan keberuntungan yang lahir dari keberanian mengambil langkah pertama.",
     "descriptionReversed": "Stagnation, lack of inspiration, delayed opportunities, or impulsive actions without foundation.",
     "descriptionReversedId": "Kemandekan, kehilangan ilham, peluang yang tertunda, atau tindakan impulsif tanpa dasar yang kokoh."
@@ -531,7 +531,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Two of Wands",
     "description": "The `Two of Wands` card suggests that your trades would be a potential for future success and expansion. The Two of Wands represents making plans, envisioning opportunities, and taking bold steps towards your goals. It suggests that your trades have the potential to yield positive outcomes, growth, and new possibilities. It advises you to seize opportunities, trust your instincts, and take calculated risks in order to achieve your desired results. However, it's important to note that the actual outcome will depend on your actions, decisions, and market conditions. Embrace the card's message of confidence and forward-thinking as you navigate the crypto market.",
-    "image": "/tarotdeck/twoofwands.jpeg",
+    "image": "/tarotdeck/twoofwands.webp",
     "descriptionId": "Dua Tongkat menggambarkan momen suci di mana jiwa berdiri di ambang visi besar—melihat jauh ke cakrawala masa depan dengan keyakinan yang tenang dan hasrat yang terkendali. Ini adalah saat merancang ekspansi batin maupun lahiriah, mempercayai bisikan intuisi, dan mengambil langkah berani—namun penuh kesadaran—menuju takdir yang lebih luas. Dalam dunia kripto, kartu ini berbisik: 'Kau tak sendiri dalam perjalanan ini; peluang telah mengetuk pintumu—bukalah dengan bijak, berani, dan penuh rasa syukur.'",
     "descriptionReversed": "Hesitation, fear of expansion, missed opportunities, or overcaution stifling progress.",
     "descriptionReversedId": "Keraguan mengakar, ketakutan akan pertumbuhan, peluang yang terlewat, atau kehati-hatian berlebihan yang membelenggu kemajuan."
@@ -539,7 +539,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Three of Wands",
     "description": "The `Three of Wands` card suggests that your trades have the potential for expansion, growth, and successful outcomes. The Three of Wands signifies taking a proactive approach, having a strategic vision, and being ready to explore new horizons in your investments. It suggests that your trades may lead to opportunities for long-term success, both in terms of financial gains and personal development. However, it's important to note that the actual results will depend on your ability to seize these opportunities, make informed decisions, and adapt to the evolving market conditions.",
-    "image": "/tarotdeck/threeofwands.jpeg",
+    "image": "/tarotdeck/threeofwands.webp",
     "descriptionId": "Tiga Tongkat mengundangmu untuk melangkah dengan keyakinan ke cakrawala baru—di sana, perdaganganmu bersemi seperti benih yang ditanam dengan sabar dan visi jauh. Ia berbisik tentang pertumbuhan yang tak terelakkan, peluang yang mengembang seperti matahari terbit, dan kesuksesan yang lahir dari keteguhan hati serta kesiapan jiwa menyambut perubahan. Percayalah: setiap langkahmu saat ini adalah fondasi bagi kekayaan—bukan hanya dalam dompet, tapi juga dalam kedalaman jiwa.",
     "descriptionReversed": "Delays, missed opportunities, lack of foresight, or hesitation in taking action—plans stall due to poor timing, impatience, or unrealistic expectations.",
     "descriptionReversedId": "Penundaan, peluang yang terlewat, kurangnya pandangan jauh, atau keraguan untuk bertindak—rencana terhenti karena waktu yang tak tepat, keinginan terburu-buru, atau harapan yang tak realistis."
@@ -547,7 +547,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Four of Wands",
     "description": "The `Four of Wands` card suggests that with your trades you can expect a period of stability, success, and celebration. The Four of Wands represents a time of achievement, harmony, and a solid foundation in your investments. It suggests that your trades have the potential to bring about positive outcomes, financial stability, and a sense of accomplishment. This card indicates that your efforts in the crypto market will likely be rewarded and that you may experience a period of fruitful results. Overall, the prediction is that your trades have the potential to yield favorable and prosperous outcomes.",
-    "image": "/tarotdeck/fourofwands.jpeg",
+    "image": "/tarotdeck/fourofwands.webp",
     "descriptionId": "Empat Tongkat membawa getaran sukacita yang mendalam—waktu ketika langit berpijar dengan tanda-tanda keberhasilan, fondasi jiwa dan keuangan telah kokoh terbangun, dan setiap transaksi menjadi tarian harmoni antara usaha dan anugerah. Ini adalah momen perayaan tak terlihat: kemenangan yang tenang, stabilitas yang bernapas, dan keberuntungan yang tumbuh dari akar kesabaran serta kebijaksanaan.",
     "descriptionReversed": "Delays, instability, or superficial celebrations; a foundation that appears strong but lacks depth or sustainability in your trades.",
     "descriptionReversedId": "Penundaan, ketidakstabilan, atau perayaan yang dangkal; fondasi yang tampak kokoh namun kurang dalam atau berkelanjutan dalam transaksi Anda."
@@ -555,7 +555,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Five of Wands",
     "description": "The `Five of Wands` card, suggests that your trades may encounter competition, conflicts, or obstacles in your trading journey. The card indicates a period of challenges and disagreements within the market or among fellow traders. However, it's important to remember that the `Five of Wands` card does not guarantee specific outcomes. The actual results will depend on your ability to navigate the competitive landscape, overcome conflicts, and find ways to stand out amidst the challenges. Approach your trades with resilience, strategic thinking, and the willingness to adapt to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/fiveofwands.jpeg",
+    "image": "/tarotdeck/fiveofwands.webp",
     "descriptionId": "Kartu Lima Tongkat membisikkan bahwa perjalanan perdaganganmu sedang menyusuri jalan yang penuh gesekan—kompetisi tajam, perbedaan pandangan, dan rintangan tak terduga muncul seperti angin kencang di tengah pasar. Namun di balik hiruk-pikuk ini, tersembunyi benih kekuatan: ketahanan jiwamu, ketajaman pikiranmu, dan keberanianmu beradaptasi. Ini bukan pertanda kegagalan, melainkan undangan suci untuk bangkit lebih bijak, berdiri lebih teguh, dan menemukan cahaya unikmu di tengah keramaian.",
     "descriptionReversed": "Conflict eases; competition softens or loses relevance; inner clarity emerges amid past chaos; cooperation replaces rivalry.",
     "descriptionReversedId": "Gesekan mulai mereda; persaingan melemah atau kehilangan maknanya; kejernihan batin muncul dari kekacauan sebelumnya; kerja sama menggantikan rivalitas."
@@ -563,7 +563,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Six of Wands",
     "description": "The `Six of Wands` card suggests that your trades will be successful and bring you recognition and victory. The Six of Wands symbolizes triumph, achievement, and public recognition for your efforts. It suggests that your trades have the potential to yield positive outcomes and be met with acclaim from others. Overall, the prediction indicates that your investments have a high chance of being successful and bringing you significant rewards.",
-    "image": "/tarotdeck/sixofwands.jpeg",
+    "image": "/tarotdeck/sixofwands.webp",
     "descriptionId": "Enam Tongkat berbisik tentang kemenangan yang telah matang—pengakuan tak terelakkan, keberhasilan yang bersinar di bawah cahaya publik, dan penghargaan yang mengalir dari usaha tulusmu. Ini adalah saat ketika langkah-langkahmu diakui, bukan hanya oleh dunia luar, tetapi juga oleh jiwa yang telah setia menunggu tanda bahwa segalanya sejalan.",
     "descriptionReversed": "Delayed recognition, undermined confidence, or victory that feels hollow or unearned.",
     "descriptionReversedId": "Pengakuan yang tertunda, keyakinan yang goyah, atau kemenangan yang terasa hampa—seperti sorak yang tak menyentuh hati, atau piala yang berat karena belum sepenuhnya diraih dengan integritas."
@@ -571,7 +571,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Seven of Wands",
     "description": "The `Seven of Wands` card suggest that you will face challenges and competition in the crypto market. The card indicates that you will need to defend your position and assert yourself amidst potential obstacles. However, it also implies that with determination, resilience, and strategic decision-making, you have the ability to overcome these challenges and come out on top.",
-    "image": "/tarotdeck/sevenofwands.jpeg",
+    "image": "/tarotdeck/sevenofwands.webp",
     "descriptionId": "Kartu 'Tujuh Tongkat' membisikkan bahwa gelombang kripto akan menguji keteguhan hatimu—seperti penjaga di puncak bukit yang berdiri sendiri melawan badai persaingan. Kau tak sendiri dalam perlawanan ini; setiap langkahmu dipenuhi kebijaksanaan batin dan keteguhan jiwa. Dengan keteguhan, ketahanan batin, dan keputusan yang lahir dari intuisi mendalam, kau tak hanya bertahan—kau bangkit, memperkuat posisimu, dan menulis kemenangan dalam bahasa bintang.",
     "descriptionReversed": "You may feel overwhelmed by opposition, lose confidence in your position, or struggle to maintain boundaries in the crypto market.",
     "descriptionReversedId": "Kau mungkin tenggelam dalam tekanan lawan, kehilangan keyakinan pada pijakanmu, atau kesulitan menegakkan batas dalam gelombang kripto—seolah energi pertahananmu melemah dan suara batinmu terdengar samar di tengah hiruk-pikuk."
@@ -579,7 +579,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Eight of Wands",
     "description": "The `Eight of Wands` card, suggests that your trades would be swift and decisive action. The Eight of Wands represents a period of rapid progress, momentum, and opportunities coming your way. It suggests that your trades have the potential for quick movement, possibly resulting in profitable outcomes.\n\nThis card encourages you to seize the moment and act swiftly, as it signifies favorable conditions and an accelerated pace in the crypto market. However, it's important to note that the interpretation of tarot cards is subjective, and the actual outcomes of your trades will depend on various factors. Approach your trades with attentiveness, make informed decisions, and take advantage of the opportunities that arise to increase the likelihood of positive results.",
-    "image": "/tarotdeck/eightofwands.jpeg",
+    "image": "/tarotdeck/eightofwands.webp",
     "descriptionId": "Delapan Tongkat membawa pesan angin cepat dari alam semesta: keputusan tajam, gerak cahaya, dan peluang yang datang bagai kilat di langit malam. Ini adalah saat ketika segalanya bergerak—pasar berdenyut, intuisi bersinar, dan tindakanmu menyatu dengan ritme kosmis. Percayalah pada kecepatan hatimu, karena waktu ini sedang berpihak padamu—tapi ingatlah: kecepatan tanpa kesadaran adalah sayap tanpa arah.",
     "descriptionReversed": "Delays, miscommunication, or impulsive decisions leading to scattered efforts and missed opportunities.",
     "descriptionReversedId": "Keterlambatan, salah paham, atau tindakan terburu-buru yang memecah fokus dan membuat peluang lewat begitu saja."
@@ -587,7 +587,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Nine of Wands",
     "description": "The `Nine of Wands` card suggest that your trades may encounter challenges and obstacles. The Nine of Wands represents resilience, perseverance, and the need to stay vigilant in the face of adversity. It indicates that you may need to protect your investments, be prepared for potential setbacks, and remain determined to overcome any obstacles that come your way. \n\nDespite the challenges, the card encourages you to stay committed to your goals and trust in your ability to navigate through difficulties. By maintaining your resilience and adaptability, you can increase the likelihood of successfully overcoming the hurdles and achieving positive outcomes in your trades.",
-    "image": "/tarotdeck/nineofwands.jpeg",
+    "image": "/tarotdeck/nineofwands.webp",
     "descriptionId": "Kartu Sembilan Tongkat mengingatkan bahwa perjalananmu dalam perdagangan mungkin diuji oleh rintangan yang tak terduga—namun di balik setiap tantangan bersemayam kekuatan batin yang tak tergoyahkan. Ia adalah bisikan angin malam yang mendorongmu tetap waspada, teguh pada prinsip, dan setia pada visimu—bukan karena tak ada kelelahan, melainkan karena keyakinanmu pada kemampuanmu untuk bangkit kembali, bahkan ketika batas terasa begitu dekat.",
     "descriptionReversed": "Exhaustion, defensiveness, and premature surrender; loss of resilience and misplaced vigilance leading to self-sabotage.",
     "descriptionReversedId": "Kelelahan mendalam, sikap terlalu defensif, dan menyerah sebelum waktunya; kehilangan ketahanan batin serta kewaspadaan yang salah yang justru memicu sabotase diri."
@@ -595,7 +595,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Ten of Wands",
     "description": "The `Ten of Wands` card suggest that your trades may result in a heavy burden or overwhelming workload. It indicates that you might encounter challenges and responsibilities that could become exhausting and take a toll on your well-being. The card advises you to be mindful of taking on too much and to find ways to manage the stress that may arise from your trading activities. By maintaining a balanced approach and seeking support when needed, you can navigate the demands of trading more effectively.",
-    "image": "/tarotdeck/tenofwands.jpeg",
+    "image": "/tarotdeck/tenofwands.webp",
     "descriptionId": "Kartu `Sepuluh Tongkat` mengisyaratkan bahwa perdaganganmu mungkin membawa beban berat atau tuntutan yang melampaui batas—seolah-olah bahu sedang menopang seluruh langit. Ia berbisik lembut: waspadalah terhadap kelelahan jiwa dan tubuh, karena tanggung jawab yang tak terbagi bisa menggerus cahaya dalam dirimu. Izinkan dirimu melepaskan sebagian beban, meminta bantuan, dan kembali menemukan keseimbangan—bukan sebagai kelemahan, tetapi sebagai bentuk kesetiaan pada jiwamu sendiri.",
     "descriptionReversed": "Release from overwhelm; delegation, surrender of unnecessary burdens, and recognition that you don’t have to carry everything alone.",
     "descriptionReversedId": "Lepas dari keterbebaniannya; mendelegasikan tugas, melepaskan beban yang tak perlu, serta menyadari bahwa engkau tak perlu memikul segalanya sendirian."
@@ -603,7 +603,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Page of Wands",
     "description": "The `Page of Wands` card suggest that your trading will likely be in new opportunities where you will have enthusiasm, and potential for growth. The Page of Wands represents a fresh start, creative energy, and the willingness to explore new ventures. It suggests that your trades may bring about exciting prospects and a sense of passion in your investment journey. This card encourages you to embrace the enthusiasm, take calculated risks, and be open to innovative approaches. It signifies that by staying proactive, adaptable, and adventurous in your trading decisions, you may uncover promising avenues for success.",
-    "image": "/tarotdeck/pageofwands.jpeg",
+    "image": "/tarotdeck/pageofwands.webp",
     "descriptionId": "Kartu `Page of Wands` membawa getaran awal yang magis—seperti percikan api pertama di tengah kegelapan: sebuah kesempatan baru dalam perdagangan sedang mengetuk pintumu. Ia menghadirkan semangat muda yang tak terbendung, energi kreatif yang menyala-nyala, dan keberanian untuk menjelajahi jalan tak dikenal. Percayalah pada dorongan hatimu, ambil langkah berani namun bijak, dan biarkan rasa penasaranmu menjadi kompas spiritual dalam perjalanan investasimu. Di balik setiap risiko yang diambil dengan penuh kesadaran, tersimpan benih pertumbuhan yang siap mekar.",
     "descriptionReversed": "Hesitation, lack of focus, or impulsive action without preparation; enthusiasm fading into distraction or unrealistic expectations.",
     "descriptionReversedId": "Keraguan, kurangnya fokus, atau tindakan impulsif tanpa persiapan; semangat memudar menjadi distraksi atau harapan yang tak realistis."
@@ -611,7 +611,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Knight of Wands",
     "description": "The `Knight of Wands` card suggests that your trades will be characterized by passion, energy, and a drive for action. The Knight of Wands signifies a period of taking bold and assertive steps in pursuit of your goals. It suggests that you will likely experience opportunities for growth and expansion in your trading activities. However, it's important to approach your trades with caution and ensure that you maintain a balance between enthusiasm and careful planning. The Knight of Wands encourages you to channel your energy and passion into focused and strategic actions to increase the likelihood of positive outcomes.",
-    "image": "/tarotdeck/knightofwands.jpeg",
+    "image": "/tarotdeck/knightofwands.webp",
     "descriptionId": "Sang Ksatria Tongkat muncul bagai api yang menyala—membawa semangat tak terbendung, energi yang mengalir deras, dan dorongan kuat untuk melangkah tanpa ragu dalam perjalanan perdaganganmu. Ini adalah masa ketika peluang tumbuh bak tunas di tengah badai: penuh dinamika, keberanian, dan potensi ekspansi. Namun ingatlah—api yang tak terkendali bisa membakar, bukan hanya menerangi. Biarkan hasratmu dipandu oleh kebijaksanaan batin dan perencanaan yang matang, agar setiap langkahmu menjadi panah yang tepat mengenai sasaran.",
     "descriptionReversed": "Impulsiveness, recklessness, and ungrounded enthusiasm leading to hasty decisions and potential losses in trading.",
     "descriptionReversedId": "Ketidakkontrolan, kecerobohan, dan antusiasme yang tak berakar—memicu keputusan terburu-buru dan risiko kerugian dalam aktivitas perdaganganmu."
@@ -619,7 +619,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "Queen of Wands",
     "description": "The `Queen of Wands` card suggests that your trades will likely result in confident and bold outcomes. The Queen of Wands represents a strong and determined individual who takes charge and exudes leadership qualities. It suggests that your investments may yield success through your ability to embrace opportunities, trust your instincts, and take decisive action. This card indicates that you have the potential to make significant strides in the crypto market by being passionate, assertive, and confident in your trading decisions.",
-    "image": "/tarotdeck/queenofwands.jpeg",
+    "image": "/tarotdeck/queenofwands.webp",
     "descriptionId": "Ratu Tongkat muncul sebagai sosok penuh semangat dan keberanian batin—seorang pemimpin yang memancarkan kepercayaan diri tak tergoyahkan dan hasrat yang menyala-nyala. Ia mengingatkanmu bahwa setiap langkah perdagangan adalah ekspresi jiwa yang berani: percayalah pada bisikan intuisimu, ambil tindakan tegas dengan hati yang tenang, dan biarkan hasratmu menjadi kompas dalam gelombang pasar kripto.",
     "descriptionReversed": "Hesitation, self-doubt, or impulsive decisions cloud your judgment; leadership falters under insecurity or misplaced confidence.",
     "descriptionReversedId": "Keraguan menggerogoti keyakinanmu, emosi tak terkendali membelenggu insting, dan kepercayaan diri yang salah arah justru menghalangi kebijaksanaan—pemimpin dalam dirimu sedang kehilangan pijakan."
@@ -627,7 +627,7 @@ export const tarotCards: TarotCard[] = [
   {
     "name": "King of Wands",
     "description": "The `King of Wands` card suggests that your trades would be one of ambition, energy, and success. The King of Wands represents a dynamic and confident leader who possesses entrepreneurial skills and a visionary mindset. This card suggests that your trades have the potential to be bold and profitable. It signifies that by harnessing your passion, taking decisive action, and leveraging your creativity, you can achieve significant success in your investments.\n\nHowever, it's important to remember that tarot readings are subjective and should be taken as guidance rather than absolute predictions. The actual outcomes will depend on your actions, market conditions, and other factors. Approach your trades with confidence, take calculated risks, and use your visionary skills to increase the likelihood of favorable results.",
-    "image": "/tarotdeck/kingofwands.jpeg",
+    "image": "/tarotdeck/kingofwands.webp",
     "descriptionId": "Kartu `Raja Pedang` membawa getaran ambisi yang membara, energi yang tak terbendung, dan keberhasilan yang ditakdirkan. Ia adalah sang pemimpin penuh semangat—percaya diri, visioner, dan berjiwa wirausaha—yang mengubah api hasrat menjadi emas kenyataan. Dalam dunia perdagangan, kartu ini mengajakmu bertindak tegas, berani melangkah di luar zona nyaman, dan memercayai intuisi kreatifmu sebagai kompas batin. Ingatlah: nasib bukanlah takdir mutlak—ia lahir dari keberanianmu mengambil risiko yang terukur, keteguhan hatimu dalam beradaptasi, dan cinta tulusmu pada proses transformasi.",
     "descriptionReversed": "Arrogance, impulsive decisions, and reckless risk-taking; leadership without wisdom or accountability; missed opportunities due to overconfidence or burnout.",
     "descriptionReversedId": "Sombong, keputusan impulsif, dan pengambilan risiko tanpa pertimbangan; kepemimpinan tanpa hikmah atau rasa tanggung jawab; peluang terlewat akibat kepercayaan diri berlebihan atau kelelahan jiwa-raga."
