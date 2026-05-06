@@ -68,9 +68,9 @@ export async function getDbJournalEntries(userId: string) {
         updatedAt: e.updatedAt.toISOString(),
       })),
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Failed to fetch journal entries:", error);
-    return { success: false, entries: [] };
+    return { success: false, entries: [], error: error.message || "Unknown error" };
   }
 }
 

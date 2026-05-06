@@ -296,19 +296,24 @@ export default function JournalView() {
     setLocalEntries(getJournalEntries());
   }, []);
 
+  const [fetchErrorMsg, setFetchErrorMsg] = useState<string | null>(null);
+
   const fetchDbEntries = useCallback(async () => {
     if (!user) return;
     setIsFetching(true);
     setFetchError(false);
+    setFetchErrorMsg(null);
     try {
       const res = await getDbJournalEntries(user.uid);
       if (res.success) {
         setDbEntries(res.entries as DbEntry[]);
       } else {
         setFetchError(true);
+        setFetchErrorMsg((res as any).error || "Gagal mengambil data");
       }
-    } catch {
+    } catch (err: any) {
       setFetchError(true);
+      setFetchErrorMsg(err.message || "Gagal menghubungi server");
     } finally {
       setIsFetching(false);
     }
@@ -388,15 +393,21 @@ export default function JournalView() {
       {/* Error state */}
       {isLoggedIn && fetchError && !isFetching && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}
-          className="flex flex-col items-center justify-center min-h-[200px] glass-card rounded-[2.5rem] gap-4 mb-8"
+          className="flex flex-col items-center justify-center min-h-[300px] glass-card rounded-[2.5rem] p-8 gap-4 mb-8 border-rose-500/20"
         >
-          <Warning size={32} className="text-rose-500" />
-          <p className="text-zinc-500 text-center text-sm">Gagal memuat jurnal dari server.</p>
+          <div className="w-16 h-16 rounded-full bg-rose-500/10 flex items-center justify-center text-rose-500 mb-2">
+            <Warning size={32} weight="duotone" />
+          </div>
+          <h3 className="text-xl font-medium text-zinc-200">Gagal memuat jurnal</h3>
+          <p className="text-sm text-zinc-500 leading-relaxed text-center max-w-sm">
+            {fetchErrorMsg || "Terjadi kesalahan saat menghubungi server. Pastikan database sudah terhubung."}
+          </p>
           <button
-            onClick={fetchDbEntries}
-            className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm bg-zinc-800 border border-white/10 text-zinc-300 hover:text-white transition-all"
+            onClick={() => fetchDbEntries()}
+            className="mt-2 flex items-center gap-2 px-6 py-2.5 rounded-full bg-zinc-800 border border-white/10 text-zinc-300 hover:text-white transition-all active:scale-[0.98]"
           >
-            <ArrowClockwise size={14} /> Coba Lagi
+            <ArrowClockwise size={16} />
+            Coba Lagi
           </button>
         </motion.div>
       )}
