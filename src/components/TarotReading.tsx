@@ -296,10 +296,10 @@ export default function TarotReading() {
           >
             {/* Cards Display Grid */}
             <div className={cn(
-              "grid gap-x-6 gap-y-12 md:gap-x-10 md:gap-y-16 mb-6 md:mb-10 justify-items-center w-full mx-auto transition-all duration-500",
-              spreadSize === 1 ? "grid-cols-1" : 
-              spreadSize === 3 ? "grid-cols-1 sm:grid-cols-3" : 
-              "grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
+              "grid gap-4 gap-y-8 sm:gap-6 sm:gap-y-10 md:gap-x-10 md:gap-y-14 mb-6 md:mb-10 justify-items-center w-full mx-auto transition-all duration-500",
+              spreadSize === 1 ? "grid-cols-1 max-w-[240px] mx-auto" : 
+              spreadSize === 3 ? "grid-cols-3 max-w-md sm:max-w-xl md:max-w-2xl mx-auto" : 
+              "grid-cols-3 md:grid-cols-3 lg:grid-cols-6 max-w-md sm:max-w-xl md:max-w-3xl lg:max-w-none"
             )}>
               {drawnCards.map((drawn, index) => {
                 const isRevealed = revealedCards[index];
@@ -309,10 +309,9 @@ export default function TarotReading() {
                   <div 
                     key={`drawn-wrapper-${index}`} 
                     className={cn(
-                      "flex flex-col items-center gap-4 w-full transition-all duration-500",
+                      "flex flex-col items-center gap-2 sm:gap-4 w-full transition-all duration-500",
                       spreadSize === 1 ? "max-w-[240px] md:max-w-[280px]" : 
-                      spreadSize === 3 ? "max-w-[160px] sm:max-w-none" : 
-                      "max-w-[140px] sm:max-w-[160px] lg:max-w-none"
+                      "w-full"
                     )}
                   >
                     <motion.div
@@ -327,10 +326,11 @@ export default function TarotReading() {
                       }}
                       onClick={() => revealCard(index)}
                       className={cn(
-                        "relative w-full aspect-[2/3] rounded-2xl cursor-pointer perspective-1000 transition-all duration-500",
-                        isSelected && isRevealed ? "-translate-y-6 md:-translate-y-8 shadow-[0_30px_60px_-15px_rgba(244,63,94,0.4)] ring-2 ring-rose-500/30 z-20" : "hover:-translate-y-3 hover:shadow-2xl z-10",
+                        "relative w-full aspect-[2/3] rounded-xl sm:rounded-2xl cursor-pointer transition-all duration-500",
+                        isSelected && isRevealed ? "-translate-y-4 sm:-translate-y-6 md:-translate-y-8 shadow-[0_30px_60px_-15px_rgba(244,63,94,0.4)] ring-2 ring-rose-500/30 z-20" : "hover:-translate-y-3 hover:shadow-2xl z-10",
                         !isRevealed && "glass-card border-rose-500/20 shadow-xl overflow-hidden"
                       )}
+                      style={{ perspective: "1000px" }}
                     >
                       {/* Shimmer Effect for Unrevealed Cards */}
                       {!isRevealed && (
@@ -375,7 +375,7 @@ export default function TarotReading() {
                                 src={drawn.card.image}
                                 alt={drawn.card.name}
                                 fill
-                                sizes="(max-width: 768px) 120px, 200px"
+                                sizes="(max-width: 640px) 30vw, (max-width: 768px) 25vw, (max-width: 1024px) 180px, 200px"
                                 className="object-cover"
                                 priority
                               />
@@ -386,9 +386,9 @@ export default function TarotReading() {
                     </motion.div>
                     
                     {/* Position Label - Now in the flow */}
-                    <div className="text-center h-10 flex items-center justify-center px-2">
+                    <div className="text-center h-8 sm:h-10 flex items-center justify-center px-1 sm:px-2">
                       <span className={cn(
-                        "text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-semibold transition-all duration-300 leading-tight block",
+                        "text-[8px] sm:text-[10px] md:text-[11px] uppercase tracking-[0.15em] sm:tracking-[0.2em] font-semibold transition-all duration-300 leading-tight block",
                         isSelected ? "text-rose-500 drop-shadow-[0_0_8px_rgba(244,63,94,0.5)]" : "text-zinc-500"
                       )}>
                         {drawn.positionName}
