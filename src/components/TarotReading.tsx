@@ -100,7 +100,6 @@ export default function TarotReading() {
     <div className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 min-h-[100dvh] flex flex-col">
       {/* Header */}
       <motion.div 
-        layout
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={SPRING}
@@ -167,7 +166,6 @@ export default function TarotReading() {
                       type="date"
                       value={birthDate}
                       onChange={(e) => setBirthDate(e.target.value)}
-                      onFocus={(e) => e.target.showPicker?.()}
                       className="w-full bg-zinc-900/50 border border-white/5 rounded-2xl p-4 pr-12 text-zinc-100 focus:outline-none focus:ring-1 focus:ring-rose-500/50 transition-all cursor-pointer placeholder:text-zinc-600 appearance-none"
                     />
                     {!birthDate && (
@@ -264,7 +262,7 @@ export default function TarotReading() {
                   }}
                   transition={{
                     repeat: Infinity,
-                    duration: 0.5,
+                    duration: 0.8,
                     delay: i * 0.15,
                   }}
                   className="absolute inset-0 rounded-2xl glass-card flex flex-col items-center justify-center border-rose-500/20"

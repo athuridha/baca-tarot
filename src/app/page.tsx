@@ -1,4 +1,5 @@
 import TarotReading from "@/components/TarotReading";
+import { ErrorBoundary } from "@/components/ErrorBoundary";
 
 export default function Home() {
   return (
@@ -13,7 +14,9 @@ export default function Home() {
       </div>
 
       <div className="relative z-10 flex-1 flex flex-col justify-center items-center w-full">
-        <TarotReading />
+        <ErrorBoundary>
+          <TarotReading />
+        </ErrorBoundary>
       </div>
     </main>
   );
