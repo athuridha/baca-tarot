@@ -1,17 +1,85 @@
 "use client";
 
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback, useEffect, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { tarotCards, TarotCard } from "@/data/tarotData";
-import { Sparkle, ShuffleAngular, StarFour, CaretLeft, CaretRight, MagicWand, CalendarBlank } from "@phosphor-icons/react";
+import { Sparkle, ShuffleAngular, StarFour, CaretLeft, CaretRight, MagicWand, CalendarBlank, BookOpen, Export, Heart, Briefcase, YinYang, Compass, X, CircleNotch } from "@phosphor-icons/react";
 import { cn } from "@/lib/utils";
 import ReactMarkdown from "react-markdown";
 import { drawCards, getCardMeaning, DrawnCard } from "@/lib/tarot-logic";
+import { saveJournalEntry } from "@/app/actions/journal";
+import { useAuth } from "@/components/AuthProvider";
+import { toPng } from "html-to-image";
 
 const SPRING = { type: "spring", stiffness: 100, damping: 20 } as const;
 
+const THEMES = [
+  { id: "general", labelId: "Umum", labelEn: "General", icon: Compass, color: "rose" },
+  { id: "love", labelId: "Asmara & Cinta", labelEn: "Love & Romance", icon: Heart, color: "pink" },
+  { id: "career", labelId: "Karier & Keuangan", labelEn: "Career & Finance", icon: Briefcase, color: "amber" },
+  { id: "spirit", labelId: "Jiwa, Raga & Batin", labelEn: "Mind, Body, Spirit", icon: YinYang, color: "emerald" },
+] as const;
+
+type ThemeId = typeof THEMES[number]["id"];
+
+// Shareable Quote Card
+function ShareQuoteModal({ text, onClose }: { text: string; onClose: () => void }) {
+  const quoteRef = useRef<HTMLDivElement>(null);
+  const [isExporting, setIsExporting] = useState(false);
+
+  const handleExport = async () => {
+    if (!quoteRef.current) return;
+    setIsExporting(true);
+    try {
+      const dataUrl = await toPng(quoteRef.current, { quality: 1, pixelRatio: 2, backgroundColor: "#09090b" });
+      const link = document.createElement("a");
+      link.download = `tarot-quote-${Date.now()}.png`;
+      link.href = dataUrl;
+      link.click();
+    } catch (err) { console.error(err); } finally { setIsExporting(false); }
+  };
+
+  const quoteMatch = text.match(/>\s*(.+)/);
+  const quoteText = quoteMatch ? quoteMatch[1].replace(/\*\*/g, "") : text.substring(0, 200);
+
+  return (
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+      className="fixed inset-0 z-[60] bg-zinc-950/80 backdrop-blur-sm flex items-center justify-center p-4"
+      onClick={onClose}
+    >
+      <motion.div initial={{ scale: 0.9, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} exit={{ scale: 0.9, opacity: 0 }}
+        transition={SPRING} className="flex flex-col items-center gap-6 max-w-lg w-full" onClick={(e) => e.stopPropagation()}
+      >
+        <div ref={quoteRef} className="w-full rounded-3xl p-10 relative overflow-hidden"
+          style={{ background: "linear-gradient(135deg, #18181b 0%, #09090b 50%, #1c1917 100%)" }}
+        >
+          <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-rose-500/60 to-transparent" />
+          <div className="absolute top-6 right-6 opacity-10"><Sparkle weight="fill" size={48} className="text-rose-500" /></div>
+          <div className="relative z-10 flex flex-col gap-6">
+            <div className="text-rose-500/60 text-6xl font-serif leading-none">&ldquo;</div>
+            <p className="text-zinc-200 text-lg md:text-xl leading-relaxed font-medium -mt-4 px-2">{quoteText}</p>
+            <div className="flex items-center gap-2 text-zinc-500 text-xs uppercase tracking-[0.2em] pt-2 border-t border-white/5">
+              <Sparkle weight="fill" size={12} className="text-rose-500" /> Baca Tarot
+            </div>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <button onClick={handleExport} disabled={isExporting}
+            className="flex items-center gap-2 px-6 py-3 rounded-full bg-rose-500 text-white text-sm font-medium hover:bg-rose-600 transition-all active:scale-[0.98] disabled:opacity-50"
+          >
+            {isExporting ? <CircleNotch size={16} className="animate-spin" /> : <Export size={16} />}
+            {isExporting ? "Mengunduh..." : "Unduh Gambar"}
+          </button>
+          <button onClick={onClose} className="px-4 py-3 rounded-full text-zinc-400 hover:text-white transition-colors border border-white/10"><X size={16} /></button>
+        </div>
+      </motion.div>
+    </motion.div>
+  );
+}
+
 export default function TarotReading() {
+  const { user } = useAuth();
   const [step, setStep] = useState<"select" | "shuffling" | "reading">("select");
   const [spreadSize, setSpreadSize] = useState<1 | 3 | 6>(3);
   const [language, setLanguage] = useState<"id" | "en">("id");
@@ -24,6 +92,9 @@ export default function TarotReading() {
   const [summary, setSummary] = useState<string | null>(null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [theme, setTheme] = useState<ThemeId>("general");
+  const [isSavedToJournal, setIsSavedToJournal] = useState(false);
+  const [showShareModal, setShowShareModal] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -46,6 +117,7 @@ export default function TarotReading() {
           cards: drawnCards,
           spreadSize,
           language,
+          theme,
         }),
       });
       const data = await res.json();
@@ -106,6 +178,32 @@ export default function TarotReading() {
     setActiveIndex(0);
     setSummary(null);
     setIsGenerating(false);
+    setIsSavedToJournal(false);
+  };
+
+  const handleSaveToJournal = async () => {
+    if (isSavedToJournal) return;
+    if (!user) {
+      alert(language === "id" ? "Silakan login dengan akun Google terlebih dahulu dari menu navigasi." : "Please sign in with Google from the navigation menu first.");
+      return;
+    }
+    const res = await saveJournalEntry({
+      userId: user.uid,
+      email: user.email || "",
+      name: user.displayName || undefined,
+      image: user.photoURL || undefined,
+      type: "tarot",
+      title: language === "id" ? `Bacaan Tarot: ${THEMES.find(t => t.id === theme)?.labelId || "Umum"}` : `Tarot Reading: ${THEMES.find(t => t.id === theme)?.labelEn || "General"}`,
+      content: summary || "",
+      cards: drawnCards,
+      theme: THEMES.find(t => t.id === theme)?.labelId || "Umum",
+      deckImage: drawnCards[0]?.card?.image || undefined,
+    });
+    if (res.success) {
+      setIsSavedToJournal(true);
+    } else {
+      alert(language === "id" ? "Gagal menyimpan ke jurnal." : "Failed to save to journal.");
+    }
   };
 
   return (
@@ -193,6 +291,35 @@ export default function TarotReading() {
                 placeholder={language === "id" ? "Apa yang sedang membebani pikiranmu? Atau apa yang ingin kamu ketahui..." : "What is weighing on your mind? Or what do you want to know..."}
                 className="w-full h-32 bg-zinc-900/50 border border-white/5 rounded-2xl p-4 text-zinc-100 focus:outline-none focus:ring-1 focus:ring-rose-500/50 resize-none transition-all placeholder:text-zinc-600"
               />
+            </div>
+
+            {/* Theme Selection */}
+            <div className="w-full flex flex-col gap-2">
+              <label className="text-zinc-400 font-medium tracking-wide text-sm px-2">
+                {language === "id" ? "Fokus Bacaan" : "Reading Theme"}
+              </label>
+              <div className="grid grid-cols-2 gap-3">
+                {THEMES.map((t) => {
+                  const Icon = t.icon;
+                  const isSelected = theme === t.id;
+                  return (
+                    <button
+                      key={t.id}
+                      onClick={() => setTheme(t.id)}
+                      className={cn(
+                        "flex items-center gap-3 p-4 rounded-2xl border text-left transition-all duration-300 text-sm",
+                        isSelected
+                          ? `bg-${t.color}-500/10 border-${t.color}-500/40 text-${t.color}-500 ring-1 ring-${t.color}-500/30`
+                          : "bg-zinc-900/50 border-white/5 text-zinc-400 hover:bg-zinc-800/50 hover:text-zinc-200"
+                      )}
+                      style={isSelected ? { background: `color-mix(in srgb, var(--color-${t.color}-500) 10%, transparent)` } : {}}
+                    >
+                      <Icon weight={isSelected ? "fill" : "regular"} size={20} />
+                      {language === "id" ? t.labelId : t.labelEn}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
 
@@ -492,6 +619,27 @@ export default function TarotReading() {
                     </div>
                   </motion.div>
                 )}
+
+                {/* Save & Share Actions */}
+                {summary && (
+                  <div className="flex flex-wrap gap-3 mt-4">
+                    <button
+                      onClick={handleSaveToJournal}
+                      disabled={isSavedToJournal}
+                      className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all active:scale-[0.98] bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 hover:bg-emerald-500/20 disabled:opacity-50 disabled:pointer-events-none"
+                    >
+                      <BookOpen size={16} />
+                      {isSavedToJournal ? "Tersimpan di Jurnal" : "Simpan ke Jurnal"}
+                    </button>
+                    <button
+                      onClick={() => setShowShareModal(true)}
+                      className="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all active:scale-[0.98] bg-zinc-800 border border-white/10 text-zinc-300 hover:text-white hover:border-white/20"
+                    >
+                      <Export size={16} />
+                      Bagikan Kutipan
+                    </button>
+                  </div>
+                )}
               </motion.div>
             )}
 
@@ -507,6 +655,13 @@ export default function TarotReading() {
           </div>
         </motion.div>
       )}
+
+      {/* Share Quote Modal */}
+      <AnimatePresence>
+        {showShareModal && summary && (
+          <ShareQuoteModal text={summary} onClose={() => setShowShareModal(false)} />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

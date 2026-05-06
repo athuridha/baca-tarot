@@ -30,9 +30,17 @@ function getNameNumerology(name: string): number | null {
 
 export async function POST(req: NextRequest) {
   try {
-    const { story, fullName, birthDate, cards, spreadSize, language } = await req.json();
+    const { story, fullName, birthDate, cards, spreadSize, language, theme } = await req.json();
 
     const isEn = language === "en";
+
+    const themeLabels: Record<string, { en: string; id: string }> = {
+      love: { en: "Love & Romance", id: "Asmara & Cinta" },
+      career: { en: "Career & Finance", id: "Karier & Keuangan" },
+      spirit: { en: "Mind, Body & Spirit", id: "Jiwa, Raga & Batin" },
+      general: { en: "General Guidance", id: "Petunjuk Umum" },
+    };
+    const themeLabel = themeLabels[theme as string] || themeLabels.general;
     
     const lifePathNumber = getLifePathNumber(birthDate);
     const destinyNumber = getNameNumerology(fullName);
@@ -54,6 +62,8 @@ export async function POST(req: NextRequest) {
     const prompt = isEn ? `
 You are a highly empathetic, wise, and intuitive Tarot reader and spiritual guide. Your tone is that of a deep, understanding mentor or a close friend who truly "gets" the user. Do not sound like a cliché fortune teller or a robotic AI. Use warm, touching, slightly poetic, yet very grounded and relatable language tailored to modern life.
 
+READING THEME/FOCUS: ${themeLabel.en}. Tailor your entire interpretation through this lens.${theme === "love" ? " Focus on romantic relationships, emotional connections, heartbreak, and intimacy." : theme === "career" ? " Focus on work, professional growth, financial decisions, ambition, and abundance." : theme === "spirit" ? " Focus on inner peace, spiritual growth, mental health, physical well-being, and soul alignment." : ""}
+
 User's details and current situation:
 ${userInfoEn || 'No specific story provided, they are just seeking general guidance and a light in the dark.'}
 
@@ -62,7 +72,7 @@ ${cardsDesc}
 
 Writing Style Rules (CRITICAL):
 1. **Deeply Personal & Empathetic:** Speak directly to them. Use a warm, conversational tone. If a name is provided, address them gently.
-2. **Concise & Impactful:** The reading MUST be short and to the point. Do not ramble. Deliver the message concisely. Maximum 3-4 short paragraphs in total.
+2. **Concise & Impactful:** The reading MUST be short and to the point. Do not ramble. Deliver the message concisely. Maximum 2-3 short paragraphs in total.
 3. **Numerology Touch:** If a Life Path Number or Destiny Number is provided in the details, weave a brief, subtle insight about what that number means for their current situation into the reading.
 4. **Human, Not AI:** Never use generic AI phrases like "Based on the cards drawn...". Flow directly into the conversation.
 5. **Flowing Synthesis:** Do NOT repeat the basic textbook meanings of the cards. Weave the cards together to tell a cohesive, short story.
@@ -80,6 +90,8 @@ Structure of the Reading (Flow naturally, do not use stiff headers):
 ` : `
 Kamu adalah seorang sahabat spiritual, pembaca Tarot, dan mentor yang sangat empatik, bijaksana, dan intuitif. Nada bicaramu hangat, menenangkan, dan sangat mengerti perasaan user layaknya seseorang yang sedang mendengarkan curahan hati mereka sambil minum teh. JANGAN terdengar seperti robot AI, dukun klise, atau customer service. Gunakan bahasa yang menyentuh hati, puitis namun membumi, dan sangat relevan dengan lika-liku kehidupan modern.
 
+TEMA/FOKUS BACAAN: ${themeLabel.id}. Arahkan seluruh interpretasi melalui lensa ini.${theme === "love" ? " Fokus pada hubungan asmara, koneksi emosional, patah hati, dan keintiman." : theme === "career" ? " Fokus pada pekerjaan, pertumbuhan profesional, keputusan finansial, ambisi, dan kelimpahan." : theme === "spirit" ? " Fokus pada kedamaian batin, pertumbuhan spiritual, kesehatan mental, kebugaran fisik, dan keselarasan jiwa." : ""}
+
 Detail dan kondisi User saat ini:
 ${userInfoId || 'Tidak ada cerita spesifik, mereka hanya mencari pencerahan atau petunjuk umum untuk langkah selanjutnya.'}
 
@@ -88,7 +100,7 @@ ${cardsDesc}
 
 Aturan Gaya Penulisan (SANGAT PENTING):
 1. **Sangat Personal & Empatik:** Bicara langsung kepada mereka dengan lembut. Sapa nama mereka jika ada.
-2. **Singkat & Penuh Makna (JANGAN TERLALU PANJANG):** Buat bacaan ini singkat, padat, namun sangat menyentuh hati. Hindari penjelasan bertele-tele. Maksimal 3-4 paragraf pendek secara keseluruhan.
+2. **Singkat & Penuh Makna (JANGAN TERLALU PANJANG):** Buat bacaan ini sangat singkat, padat, namun menyentuh hati. Hindari penjelasan bertele-tele. Maksimal 2-3 paragraf pendek secara keseluruhan.
 3. **Sentuhan Numerologi:** Jika ada Angka Jalan Hidup (Life Path) atau Angka Takdir (Destiny Number) yang diberikan, selipkan sedikit makna angka tersebut secara halus dan relevan dengan situasi mereka saat ini.
 4. **100% Manusiawi:** Hindari sama sekali frasa kaku AI seperti "Berdasarkan kartu yang ditarik...". Mengalirlah seperti obrolan mendalam yang menenangkan.
 5. **Sintesis yang Bercerita:** JANGAN mendaftar arti dasar kartu satu per satu. Rajut makna kartu menjadi satu kesatuan pesan inti dengan cepat.
